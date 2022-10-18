@@ -63,23 +63,23 @@ public class Hunter : MonoBehaviour
             if (rb.velocity.x <= speed)
             {
                 //Vector2 movement = new Vector2(moveX, 0f);
-                //rb.AddForce(movement * speed);
-                rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
+                rb.AddForce(movement * speed);
+                //rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
             }
         }
         else
         {
             //Vector2 movement = new Vector2(moveX, 0f);
-            //rb.AddForce(movement * speed * 0.4f);
-            rb.velocity = new Vector2(movement.x * speed * 0.4f, rb.velocity.y);
+            rb.AddForce(movement * (speed * 0.4f));
+            //rb.velocity = new Vector2(movement.x * speed * 0.4f, rb.velocity.y);
         }
 
-        if(moveX > 0)
+        if(movement.x > 0)
         {
             flip.flipX = false;
         }
         
-        if(moveX < 0) 
+        if(movement.x < 0) 
         {
             flip.flipX = true;
         }
