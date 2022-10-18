@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c1afbe3-95c9-411a-81f9-d1df416489f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hunter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hunter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

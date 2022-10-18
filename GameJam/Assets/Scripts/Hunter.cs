@@ -5,25 +5,15 @@ using UnityEngine.InputSystem;
 
 public class Hunter : MonoBehaviour
 {
-    public GameObject hunter;
-
     private Rigidbody2D rb;
-
     private SpriteRenderer flip;
-
     public Animator anime;
-
     private float moveX;
-
     public float speed = 5f;
-
     public float jumpHeight = 0;
-
     private bool touchGrass = false;
-
     private bool flipX;
     
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
