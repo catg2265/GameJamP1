@@ -15,13 +15,14 @@ public class Hunter : MonoBehaviour
 
     private float moveX;
 
-    public float speed = 0;
+    public float speed = 5f;
 
     public float jumpHeight = 0;
 
     private bool touchGrass = false;
 
     private bool flipX;
+    private Vector2 movement;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,11 +34,11 @@ public class Hunter : MonoBehaviour
 
     private void OnMove(InputValue movementValue)
     {
-        Vector2 movementVector = movementValue.Get<Vector2>();
-        moveX = movementVector.x;
+        movement = movementValue.Get<Vector2>();
+        //moveX = movementVector.x;
         anime.SetFloat("speed", Mathf.Abs(moveX));
             
-        if (touchGrass && movementVector.y >= 0.6f)
+        if (touchGrass && movement.y >= 0.6f)
         {
             Vector2 jump = new Vector2(0f, jumpHeight);
             rb.AddForce(jump * jumpHeight);
@@ -61,14 +62,16 @@ public class Hunter : MonoBehaviour
         {
             if (rb.velocity.x <= speed)
             {
-                Vector2 movement = new Vector2(moveX, 0f);
-                rb.AddForce(movement * speed);
+                //Vector2 movement = new Vector2(moveX, 0f);
+                //rb.AddForce(movement * speed);
+                rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
             }
         }
         else
         {
-            Vector2 movement = new Vector2(moveX, 0f);
-            rb.AddForce(movement * speed * 0.4f);
+            //Vector2 movement = new Vector2(moveX, 0f);
+            //rb.AddForce(movement * speed * 0.4f);
+            rb.velocity = new Vector2(movement.x * speed * 0.4f, rb.velocity.y);
         }
 
         if(moveX > 0)
