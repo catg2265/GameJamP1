@@ -9,17 +9,12 @@ public class Hunter : MonoBehaviour
 
     private Rigidbody2D rb;
 
-<<<<<<< HEAD
-=======
     private SpriteRenderer flip;
 
->>>>>>> main
     private float moveX;
 
     public float speed = 0;
 
-<<<<<<< HEAD
-=======
     public float jumpHeight = 0;
 
     private bool touchGrass = false;
@@ -34,13 +29,10 @@ public class Hunter : MonoBehaviour
         }
     }
 
->>>>>>> main
     private void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
         moveX = movementVector.x;
-<<<<<<< HEAD
-=======
             
         if (touchGrass && movementVector.y >= 0.6f)
         {
@@ -49,28 +41,18 @@ public class Hunter : MonoBehaviour
             touchGrass = false; 
         }
 
->>>>>>> main
     }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-<<<<<<< HEAD
-=======
         flip = GetComponent<SpriteRenderer>();
         
->>>>>>> main
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-<<<<<<< HEAD
-        Vector2 movement = new Vector2(moveX, 0f);
-        rb.AddForce(movement * speed);
-    }
-
-=======
         if (touchGrass)
         {
             if (rb.velocity.x <= speed)
@@ -103,6 +85,5 @@ public class Hunter : MonoBehaviour
 
 
 
->>>>>>> main
    
 }
