@@ -263,7 +263,6 @@ GameObject:
   - component: {fileID: 1124079081}
   - component: {fileID: 1124079080}
   - component: {fileID: 1124079079}
-  - component: {fileID: 1124079083}
   - component: {fileID: 1124079082}
   m_Layer: 0
   m_Name: Kudu
@@ -374,28 +373,8 @@ MonoBehaviour:
   animator: {fileID: 1124079079}
   alert: 0
   counter: 0
---- !u!68 &1124079083
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124079077}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -3.923638, y: -1.1052775}
-  - {x: -3.920269, y: 7.095171}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  playerTransform: {fileID: 1756663592}
+  alertDist: 5
 --- !u!1 &1407529566
 GameObject:
   m_ObjectHideFlags: 0

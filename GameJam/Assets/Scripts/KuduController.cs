@@ -1,37 +1,55 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class KuduController : MonoBehaviour
 {
     public Animator animator;
-
     public bool alert = false;
-
     public float counter = 0f;
-    // Update is called once per frame
+    public bool stopCount = false;
+    public Transform playerTransform;
+    public float alertDist = 5f;
+    
     void Update()
     {
-        counter = 0f;
-        if (!alert)
-        {
-            animator.SetBool("Alert", alert);
-            counter += Mathf.Lerp(0, 1, Time.deltaTime);
-            if (counter > 5)
-            {
-                animator.SetBool("To_Close", true);
-                alert = false;
-            }
-        }
+        
+        Alert();
         
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    void Alert()
     {
-        if (col.CompareTag("Player"))
+        if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
         {
-            alert = true;
+            animator.SetBool("Alert", true);
+            counter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (counter > 2)
+            {
+                animator.SetBool("To_Close", true);
+                counter = 0f;
+            }
         }
+        else
+        {
+            if (!stopCount)
+            {
+                counter += Mathf.Lerp(0, 1, Time.deltaTime);
+                if (counter > 10)
+                {
+                    animator.SetBool("To_Close", false);
+                    counter = 0;
+                }
+            }
+            
+            animator.SetBool("Alert", false);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, alertDist);
     }
 }
