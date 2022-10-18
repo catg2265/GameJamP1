@@ -11,6 +11,8 @@ public class Hunter : MonoBehaviour
 
     private SpriteRenderer flip;
 
+    public Animator anime;
+
     private float moveX;
 
     public float speed = 0;
@@ -33,6 +35,7 @@ public class Hunter : MonoBehaviour
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
         moveX = movementVector.x;
+        anime.SetFloat("speed", Mathf.Abs(moveX));
             
         if (touchGrass && movementVector.y >= 0.6f)
         {
@@ -47,6 +50,7 @@ public class Hunter : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
+
         
     }
 
@@ -64,7 +68,7 @@ public class Hunter : MonoBehaviour
         else
         {
             Vector2 movement = new Vector2(moveX, 0f);
-            rb.AddForce(movement * speed * 0.5f);
+            rb.AddForce(movement * speed * 0.4f);
         }
 
         if(moveX > 0)
