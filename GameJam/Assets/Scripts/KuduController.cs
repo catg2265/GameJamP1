@@ -13,12 +13,17 @@ public class KuduController : MonoBehaviour
     public bool stopCount = true;
     public Transform playerTransform;
     public float alertDist = 5f;
+    public float kuduSpeed = 5f;
+    private bool kudoMove = false;
     
     void Update()
     {
         
         Alert();
-        
+        if (kudoMove)
+        {
+            transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
+        }
     }
 
     void Alert()
@@ -33,6 +38,7 @@ public class KuduController : MonoBehaviour
             {
                 farCounter = 10f;
                 animator.SetBool("To_Close", true);
+                kudoMove = true;
                 closeCounter = 0f;
             }
         }
@@ -47,7 +53,7 @@ public class KuduController : MonoBehaviour
                 {
                     animator.SetBool("To_Close", false);
                     farCounter = 0;
-                    //stopCount = true;
+                    
                 }
                 animator.SetBool("Alert", false);
             }
@@ -56,6 +62,10 @@ public class KuduController : MonoBehaviour
         }
     }
 
+    void MoveKudu()
+    {
+        
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, alertDist);

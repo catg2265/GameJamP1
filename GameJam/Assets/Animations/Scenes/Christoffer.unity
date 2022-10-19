@@ -377,6 +377,7 @@ MonoBehaviour:
   stopCount: 0
   playerTransform: {fileID: 1756663592}
   alertDist: 5
+  kuduSpeed: 30
 --- !u!1 &1407529566
 GameObject:
   m_ObjectHideFlags: 0
