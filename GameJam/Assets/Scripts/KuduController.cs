@@ -17,6 +17,7 @@ public class KuduController : MonoBehaviour
     public float kuduSpeed = 5f;
     private bool kudoMove = false;
     public float kuduHealth = 100f;
+    private bool isFacingRight = true;
     
     void Update()
     {
@@ -42,7 +43,6 @@ public class KuduController : MonoBehaviour
         if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
         {
             farCounter = 0f;
-            
             animator.SetBool("Alert", true);
             closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (closeCounter > 2)
@@ -58,20 +58,17 @@ public class KuduController : MonoBehaviour
             closeCounter = 0f;
             if (!stopCount)
             {
-                //animator.SetBool("Alert", false);
                 farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
                 if (farCounter > 10)
                 {
                     animator.SetBool("Close", false);
                     farCounter = 0;
-                    
                 }
                 animator.SetBool("Alert", false);
             }
-            
-            
         }
     }
+
     
     private void OnDrawGizmos()
     {
