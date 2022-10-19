@@ -250,8 +250,8 @@ MonoBehaviour:
   anime: {fileID: 52842857}
   speed: 30
   jumpHeight: 20
-  targetoffset: {x: 0, y: 0, z: 0}
-  TimeToMaxDistance: 10
+  targetoffset: {x: 10, y: 0, z: 0}
+  TimeToMaxDistance: 4
 --- !u!114 &52842855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0dafd86556ea47042b8acd08c44c0ff0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19818e91bc2ce3a4d98507f6975fa17d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -564,8 +564,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 52842851}
+  m_LookAt: {fileID: 106894815}
+  m_Follow: {fileID: 106894815}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -592,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294034518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39999998, z: -10}
+  m_LocalPosition: {x: 0, y: -0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -867,7 +867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39999998, z: -10}
+  m_LocalPosition: {x: 0, y: -0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
