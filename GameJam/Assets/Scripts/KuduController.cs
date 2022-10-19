@@ -9,20 +9,36 @@ public class KuduController : MonoBehaviour
 {
     public Animator animator;
     public bool alert = false;
+    public bool isRunning = false;
     public float farCounter = 0f;
     public float closeCounter = 0f;
     public bool stopCount = true;
     public Transform playerTransform;
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
-    private bool kudoMove = false;
     public float kuduHealth = 100f;
-    private bool isFacingRight = true;
-    
+
+    public SpriteRenderer sprite;
+    //private bool isFacingRight = true;
+
+    private void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         Alert();
-        if (kudoMove)
+        AnimateKudu(isRunning, alert);
+        if (alert & !isRunning)
+        {
+            sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
+        }
+        if (isRunning)
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
         }
@@ -43,13 +59,12 @@ public class KuduController : MonoBehaviour
         if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
         {
             farCounter = 0f;
-            animator.SetBool("Alert", true);
+            alert = true;
             closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (closeCounter > 2)
             {
                 farCounter = 10f;
-                animator.SetBool("Close", true);
-                kudoMove = true;
+                isRunning = true;
                 closeCounter = 0f;
             }
         }
@@ -61,14 +76,21 @@ public class KuduController : MonoBehaviour
                 farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
                 if (farCounter > 10)
                 {
-                    animator.SetBool("Close", false);
+                    isRunning = false;
                     farCounter = 0;
                 }
-                animator.SetBool("Alert", false);
+
+                alert = false;
+                GetComponent<SpriteRenderer>().flipX = false;
             }
         }
     }
 
+    void AnimateKudu(bool run, bool spook)
+    {
+        animator.SetBool("Alert", spook);
+        animator.SetBool("Close", run);
+    }
     
     private void OnDrawGizmos()
     {
