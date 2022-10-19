@@ -372,9 +372,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1124079079}
   alert: 0
-  counter: 0
+  farCounter: 0
+  closeCounter: 0
+  stopCount: 0
   playerTransform: {fileID: 1756663592}
   alertDist: 5
+  kuduSpeed: 30
 --- !u!1 &1407529566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1386,7 @@ GameObject:
   - component: {fileID: 1756663591}
   - component: {fileID: 1756663590}
   - component: {fileID: 1756663589}
-  - component: {fileID: 1756663588}
+  - component: {fileID: 1756663593}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -1391,20 +1394,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1756663588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756663587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a648422ad5cff8d41ab6313875dd5eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1756663590}
-  speed: 5
 --- !u!61 &1756663589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1519,3 +1508,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756663593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756663587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a648422ad5cff8d41ab6313875dd5eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1756663590}
+  speed: 5
