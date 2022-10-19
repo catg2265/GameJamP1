@@ -9,14 +9,14 @@ public class bows : MonoBehaviour
 
     private Animator Bow;
     private Animator Nonbow;
-    // Start is called before the first frame update
+    
     void Start()
     {
         Bow = gameObject.GetComponent<Animator>();
         Nonbow = gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
        

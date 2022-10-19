@@ -42,7 +42,13 @@ public class Hunter : MonoBehaviour
 
     private float yes;
 
+    public bool Gamebow;
+    public bool GamenonBow;
+
+    private Animator Bow;
     
+
+
     public Vector3 targetoffset;
     public Stopwatch stopwatch;
     public float TimeToMaxDistance;
@@ -76,24 +82,24 @@ public class Hunter : MonoBehaviour
         yes = context.Get<float>();
         if (yes == 1f && stopwatch == null)
         {
+            
+            Gamebow = true;
             stopwatch = Stopwatch.StartNew();
         }
         else if (yes == 0f)
         {
-            
+            Gamebow = false;
             shoot(crosshair.transform.position);
             stopwatch = null;
             
+           
+
         }
         move = true;
     }
 
     private void shoot(Vector3 launchForce)
     {
-        if (GameObject.FindGameObjectWithTag("Arrow"))
-        {
-            Destroy(newArrow.gameObject);
-        }
             newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
             newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce.x * 1.5f;
        
@@ -104,18 +110,23 @@ public class Hunter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
         crosshair.transform.position += Vector3.down;
+
+        Bow = gameObject.GetComponent<Animator>();
         
-        
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         
+
         if (yes == 1 && move)
         {
             if(stopwatch != null && ((stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance) <= 1f)
             {
+                
                 crosshair.gameObject.SetActive(true);
                 crosshair.transform.position = Vector3.Lerp(transform.position + Vector3.down, transform.position +  Vector3.down + targetoffset, (stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance);
                 
@@ -123,6 +134,7 @@ public class Hunter : MonoBehaviour
         }
         else if(yes == 0)
         {
+            
             crosshair.transform.position = transform.position + Vector3.down;
             crosshair.gameObject.SetActive(false);
         }
@@ -159,6 +171,15 @@ public class Hunter : MonoBehaviour
             flip.flipX = true;
         }
 
+       
+
+
+    }
+
+    private void Update()
+    {
+        GetComponent<Animator>().SetBool("Bow", Gamebow);
+        
     }
 
 
@@ -166,6 +187,4 @@ public class Hunter : MonoBehaviour
 
 
 
-
-   
 }

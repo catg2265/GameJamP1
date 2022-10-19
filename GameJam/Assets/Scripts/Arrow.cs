@@ -8,6 +8,8 @@ public class Arrow : MonoBehaviour
 
     float angle;
 
+    private bool hasLanded;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,7 +18,19 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        angle = Mathf.Atan2(rb.velocity.x, rb.velocity.y) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        if(hasLanded == false)
+        {
+            angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+        
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+            rb.isKinematic = true;
+        }
     }
 }
