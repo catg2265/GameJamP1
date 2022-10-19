@@ -94,7 +94,7 @@ public class Hunter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
         crosshair.transform.position += Vector3.down;
-        
+
         
     }
 
@@ -104,7 +104,6 @@ public class Hunter : MonoBehaviour
         
         if (yes == 1 && move)
         {
-            crosshair.gameObject.SetActive(true);
             if(stopwatch != null && ((stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance) <= 1f)
             {
                 crosshair.transform.position = Vector3.Lerp(transform.position + Vector3.down, transform.position +  Vector3.down + targetoffset, (stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance);
@@ -113,7 +112,6 @@ public class Hunter : MonoBehaviour
         else if(yes == 0)
         {
             crosshair.transform.position = transform.position + Vector3.down;
-            crosshair.gameObject.SetActive(false);
 
         }
 
