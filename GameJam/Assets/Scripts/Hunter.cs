@@ -8,6 +8,8 @@ using UnityEngine.InputSystem;
 public class Hunter : MonoBehaviour
 
 {
+    GameObject newArrow;
+
     public GameObject arrow;
    
     public GameObject crosshair;
@@ -28,7 +30,6 @@ public class Hunter : MonoBehaviour
 
     public float jumpHeight = 0;
 
-    public float launchForce;
 
     public Transform shotPoint;
 
@@ -39,9 +40,11 @@ public class Hunter : MonoBehaviour
 
     private bool move;
 
+    private bool noMove = false;
+
     private float yes;
 
-    private Vector3 origin;
+    
     public Vector3 targetoffset;
     public Stopwatch stopwatch;
     public float TimeToMaxDistance;
@@ -71,6 +74,7 @@ public class Hunter : MonoBehaviour
 
     public void OnFireStart(InputValue context)
     {
+        noMove = true;
         yes = context.Get<float>();
         if (yes == 1f && stopwatch == null)
         {
@@ -78,15 +82,23 @@ public class Hunter : MonoBehaviour
         }
         else if (yes == 0f)
         {
-            shoot();
+            
+            shoot(crosshair.transform.position);
             stopwatch = null;
+            noMove = false;
         }
         move = true;
     }
 
-    private void shoot()
+    private void shoot(Vector3 launchForce)
     {
-        Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        if (GameObject.FindGameObjectWithTag("Arrow"))
+        {
+            Destroy(newArrow.gameObject);
+        }
+            newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+            newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce.x * 1.5f;
+       
     }
 
     void Start()
@@ -94,7 +106,7 @@ public class Hunter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         flip = GetComponent<SpriteRenderer>();
         crosshair.transform.position += Vector3.down;
-
+        
         
     }
 
@@ -106,13 +118,15 @@ public class Hunter : MonoBehaviour
         {
             if(stopwatch != null && ((stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance) <= 1f)
             {
+                crosshair.gameObject.SetActive(true);
                 crosshair.transform.position = Vector3.Lerp(transform.position + Vector3.down, transform.position +  Vector3.down + targetoffset, (stopwatch.ElapsedMilliseconds / 1000f) / TimeToMaxDistance);
+                
             }
         }
         else if(yes == 0)
         {
             crosshair.transform.position = transform.position + Vector3.down;
-
+            crosshair.gameObject.SetActive(false);
         }
 
         Vector2 bowPosition = transform.position + Vector3.down;
@@ -130,7 +144,7 @@ public class Hunter : MonoBehaviour
                 rb.AddForce(movement * speed);
             }
         }
-        else
+        else if(!touchGrass)
         {
             Vector2 movement = new Vector2(moveX, 0f);
             rb.AddForce(movement * (speed * 0.4f));
