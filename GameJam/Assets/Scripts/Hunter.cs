@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -7,6 +8,7 @@ using UnityEngine.InputSystem;
 public class Hunter : MonoBehaviour
 
 {
+    public GameObject arrow;
    
     public GameObject crosshair;
 
@@ -25,6 +27,10 @@ public class Hunter : MonoBehaviour
     public float speed = 5f;
 
     public float jumpHeight = 0;
+
+    public float launchForce;
+
+    public Transform shotPoint;
 
 
     private bool touchGrass = false;
@@ -72,11 +78,16 @@ public class Hunter : MonoBehaviour
         }
         else if (yes == 0f)
         {
+            shoot();
             stopwatch = null;
         }
         move = true;
     }
 
+    private void shoot()
+    {
+        Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+    }
 
     void Start()
     {
@@ -106,7 +117,12 @@ public class Hunter : MonoBehaviour
 
         }
 
-        
+        Vector2 bowPosition = transform.position + Vector3.down;
+        Vector2 crosshairPos = crosshair.transform.position;
+        Vector2 direction = crosshairPos - bowPosition;
+        transform.right = direction;
+
+
 
         if (touchGrass)
         {
