@@ -48,7 +48,7 @@ public class KuduController : MonoBehaviour
             if (closeCounter > 2)
             {
                 farCounter = 10f;
-                animator.SetBool("To_Close", true);
+                animator.SetBool("Close", true);
                 kudoMove = true;
                 closeCounter = 0f;
             }
@@ -62,7 +62,7 @@ public class KuduController : MonoBehaviour
                 farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
                 if (farCounter > 10)
                 {
-                    animator.SetBool("To_Close", false);
+                    animator.SetBool("Close", false);
                     farCounter = 0;
                     
                 }
