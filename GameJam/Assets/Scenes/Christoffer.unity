@@ -510,7 +510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124079077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.995592, y: -1.36, z: 0}
+  m_LocalPosition: {x: 6, y: -1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -533,6 +533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1124079079}
   alert: 0
+  isRunning: 0
   farCounter: 0
   closeCounter: 0
   stopCount: 0
@@ -540,6 +541,7 @@ MonoBehaviour:
   alertDist: 5
   kuduSpeed: 5
   kuduHealth: 100
+  sprite: {fileID: 0}
 --- !u!1 &1407529566
 GameObject:
   m_ObjectHideFlags: 0
