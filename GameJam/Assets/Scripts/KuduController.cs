@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -32,6 +33,7 @@ public class KuduController : MonoBehaviour
         else if (kuduHealth <= 0)
         {
             //play death animation
+            Destroy(gameObject);
         }
     }
 
