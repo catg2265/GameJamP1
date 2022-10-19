@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,14 +16,24 @@ public class KuduController : MonoBehaviour
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
     private bool kudoMove = false;
+    public float kuduHealth = 100f;
     
     void Update()
     {
-        
         Alert();
         if (kudoMove)
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
+        }
+        if (kuduHealth <= 50)
+        {
+            // play damaged animation
+            // change run animation to slower
+        }
+        else if (kuduHealth <= 0)
+        {
+            //play death animation
+            Destroy(gameObject);
         }
     }
 
@@ -61,11 +72,7 @@ public class KuduController : MonoBehaviour
             
         }
     }
-
-    void MoveKudu()
-    {
-        
-    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, alertDist);
