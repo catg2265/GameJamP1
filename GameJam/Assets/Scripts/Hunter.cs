@@ -40,8 +40,6 @@ public class Hunter : MonoBehaviour
 
     private bool move;
 
-    private bool noMove = false;
-
     private float yes;
 
     
@@ -74,7 +72,7 @@ public class Hunter : MonoBehaviour
 
     public void OnFireStart(InputValue context)
     {
-        noMove = true;
+        
         yes = context.Get<float>();
         if (yes == 1f && stopwatch == null)
         {
@@ -85,7 +83,7 @@ public class Hunter : MonoBehaviour
             
             shoot(crosshair.transform.position);
             stopwatch = null;
-            noMove = false;
+            
         }
         move = true;
     }
