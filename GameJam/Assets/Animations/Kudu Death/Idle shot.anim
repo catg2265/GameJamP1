@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kudu idle shot
+  m_Name: Idle shot
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,16 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1503892470, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
-    - time: 0.2
-      value: {fileID: -1486601942, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
-    - time: 0.41666666
-      value: {fileID: -468180161, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
+      value: {fileID: -1611812690, guid: 0bbba24d156253945b042c4670142528, type: 3}
+    - time: 0.2857143
+      value: {fileID: 1674729760, guid: 0bbba24d156253945b042c4670142528, type: 3}
+    - time: 0.5714286
+      value: {fileID: 1175980343, guid: 0bbba24d156253945b042c4670142528, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 60
+  m_SampleRate: 42
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,15 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1503892470, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
-    - {fileID: -1486601942, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
-    - {fileID: -468180161, guid: a5daafcb1ae9a2947ba88ceee6dc108f, type: 3}
+    - {fileID: -1611812690, guid: 0bbba24d156253945b042c4670142528, type: 3}
+    - {fileID: 1674729760, guid: 0bbba24d156253945b042c4670142528, type: 3}
+    - {fileID: 1175980343, guid: 0bbba24d156253945b042c4670142528, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.59523815
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
