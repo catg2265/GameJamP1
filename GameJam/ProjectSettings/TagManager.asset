@@ -1,18 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< Updated upstream
+  - Undefined
+  - ground
   - Ground
-  - Arrow
   - Water
   - Kudu
-=======
-  - Water
-  - Ground
-  - Arrow
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -47,27 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3080274321
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1211274345
-    locked: 0
-  - name: Water
-    uniqueID: 1182438741
-    locked: 0
-  - name: Ground
-    uniqueID: 2372467209
-    locked: 0
-  - name: Player
-    uniqueID: 104938111
-    locked: 0
-  - name: Grass
-    uniqueID: 1234922355
-    locked: 0
-  - name: Foreground
-    uniqueID: 2199435211
+  - name: crosshair
+    uniqueID: 137317597
     locked: 0

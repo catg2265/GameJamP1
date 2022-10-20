@@ -54,6 +54,13 @@ public class Hunter : MonoBehaviour
             speed = 0f;
         }
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            touchGrass = false;
+        }
+    }
 
     private void OnMove(InputValue movementValue)
     {
@@ -166,7 +173,7 @@ public class Hunter : MonoBehaviour
         else if(!touchGrass && !move)
         {
             Vector2 movement = new Vector2(moveX, 0f);
-            rb.AddForce(movement * (speed * 0.4f));   
+            rb.AddForce(movement * (speed * 0.1f));   
         }
         if(moveX > 0 && !move)
         {
