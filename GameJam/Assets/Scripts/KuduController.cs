@@ -112,35 +112,32 @@ public class KuduController : MonoBehaviour
 
     void Alert()
     {
-        if (kuduHealth > 0)
+        if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
         {
-            if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
+            farCounter = 0f;
+            alert = true;
+            closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (closeCounter > 2)
             {
-                farCounter = 0f;
-                alert = true;
-                closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
-                if (closeCounter > 2)
-                {
-                    farCounter = 10f;
-                    isRunning = true;
-                    closeCounter = 0f;
-                }
-            }
-            else
-            {
+                farCounter = 10f;
+                isRunning = true;
                 closeCounter = 0f;
-                if (!stopCount)
+            }
+        }
+        else
+        {
+            closeCounter = 0f;
+            if (!stopCount)
+            {
+                farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+                if (farCounter > 10)
                 {
-                    farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
-                    if (farCounter > 10)
-                    {
-                        isRunning = false;
-                        farCounter = 0;
-                    }
-
-                    alert = false;
-                    GetComponent<SpriteRenderer>().flipX = false;
+                    isRunning = false;
+                    farCounter = 0;
                 }
+
+                alert = false;
+                GetComponent<SpriteRenderer>().flipX = false;
             }
         }
     }
