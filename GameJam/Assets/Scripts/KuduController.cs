@@ -22,7 +22,7 @@ public class KuduController : MonoBehaviour
     public int arrowHits;
     public bool headshot;
 
-    public SpriteRenderer sprite;
+    SpriteRenderer sprite;
     public Camera cam;
 
     private void Start()
