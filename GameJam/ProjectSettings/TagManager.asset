@@ -58,3 +58,6 @@ TagManager:
   - name: Grass
     uniqueID: 1234922355
     locked: 0
+  - name: crosshair
+    uniqueID: 2281642615
+    locked: 0
