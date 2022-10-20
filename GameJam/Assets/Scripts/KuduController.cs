@@ -19,8 +19,8 @@ public class KuduController : MonoBehaviour
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
     public float kuduHealth = 100f;
-    public int arrowHits = 0;
-    public bool headshot = false;
+    public int arrowHits;
+    public bool headshot;
 
     public SpriteRenderer sprite;
     public Camera cam;
@@ -28,6 +28,8 @@ public class KuduController : MonoBehaviour
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        headshot = false;
+        arrowHits = 0;
     }
 
     void Update()
@@ -56,14 +58,17 @@ public class KuduController : MonoBehaviour
             if (arrowHits == 1 && headshot)
             {
                 //play headshot death 1 arrow
+                animator.SetTrigger("onearrowhead");
             }
             else if (arrowHits == 2 && headshot)
             {
                 //play headshot death 2 arrows
+                animator.SetTrigger("twoarrowhead");
             }
             else if (arrowHits == 2 && !headshot)
             {
                 //play bodyshot death 2 arrows
+                animator.SetTrigger("bodyshot");
             }
             Destroy(gameObject);
         }
