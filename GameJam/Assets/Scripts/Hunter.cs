@@ -24,6 +24,7 @@ public class Hunter : MonoBehaviour
 
     private bool touchGrass = false;
     public bool move;
+    public bool kuduRunning = false;
 
     private float yes;
 
@@ -171,26 +172,29 @@ public class Hunter : MonoBehaviour
 
             lineRenderer.enabled = false;
         }
-
-        if (touchGrass && !move)
-        {   
+        if (!kuduRunning)
+        {
+            if (touchGrass && !move)
+            {   
                 Vector2 movement = new Vector2(moveX, 0f);
                 rb.AddForce(movement * speed);
             
+            }
+            else if(!touchGrass && !move)
+            {
+                Vector2 movement = new Vector2(moveX, 0f);
+                rb.AddForce(movement * (speed * 0.2f));   
+            }
+            if(moveX > 0 && !move)
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+            if(moveX < 0 && !move) 
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
         }
-        else if(!touchGrass && !move)
-        {
-            Vector2 movement = new Vector2(moveX, 0f);
-            rb.AddForce(movement * (speed * 0.2f));   
-        }
-        if(moveX > 0 && !move)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        if(moveX < 0 && !move) 
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
+        
         
         if (KuduhitCounter == 2 && KuduHit)
         {
