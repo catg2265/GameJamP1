@@ -58,12 +58,12 @@ public class KuduController : MonoBehaviour
             if (runningCounter > 10)
             {
                 isRunning = false;
-                if (currentLevel <= 2)
+                if (currentLevel == 1)
                 {
                     transform.position = lvl2Pos.position;
                     currentLevel++;
                 }
-                else if (currentLevel >= 3)
+                else if (currentLevel == 2)
                 {
                     transform.position = lvl3Pos.position;
                     currentLevel++;
