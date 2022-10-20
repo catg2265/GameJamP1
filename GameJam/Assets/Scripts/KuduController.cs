@@ -58,9 +58,10 @@ public class KuduController : MonoBehaviour
             runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (runningCounter > 4f)
             {
-                isRunning = false;
+                
                 if (currentLevel == 1)
                 {
+                    isRunning = false;
                     transform.position = lvl2Pos.position;
                     runningCounter = 0f;
                     extraCounter = 0f;
@@ -68,6 +69,7 @@ public class KuduController : MonoBehaviour
                 }
                 else if (currentLevel == 2)
                 {
+                    isRunning = false;
                     transform.position = lvl3Pos.position;
                     runningCounter = 0f;
                     extraCounter = 0f;
@@ -75,6 +77,7 @@ public class KuduController : MonoBehaviour
                 }
                 else if (currentLevel == 3)
                 {
+                    isRunning = false;
                     runningCounter = 0f;
                     extraCounter = 0f;
                 }
