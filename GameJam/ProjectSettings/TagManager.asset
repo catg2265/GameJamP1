@@ -44,12 +44,27 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Endscene
-    uniqueID: 1298965215
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1152863247
+    locked: 0
+  - name: Ground
+    uniqueID: 2837331345
+    locked: 0
+  - name: Player
+    uniqueID: 4200047841
+    locked: 0
+  - name: Water
+    uniqueID: 2828910901
+    locked: 0
+  - name: Foreground
+    uniqueID: 476364081
+    locked: 0
   - name: crosshair
     uniqueID: 137317597
+    locked: 0
+  - name: Endscene
+    uniqueID: 1298965215
     locked: 0

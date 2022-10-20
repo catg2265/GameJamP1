@@ -207,7 +207,6 @@ public class Hunter : MonoBehaviour
         }
 
         
-        //KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1
     }
     private void Update()
     {
