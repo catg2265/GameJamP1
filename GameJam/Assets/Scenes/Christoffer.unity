@@ -545,7 +545,6 @@ MonoBehaviour:
   kuduHealth: 100
   arrowHits: 0
   headshot: 0
-  sprite: {fileID: 0}
   cam: {fileID: 519420031}
 --- !u!1 &1407529566
 GameObject:
