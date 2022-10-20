@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Debug = System.Diagnostics.Debug;
 
 public class Hunter : MonoBehaviour
 {
@@ -45,9 +46,7 @@ public class Hunter : MonoBehaviour
     public int KuduhitCounter = 1;
     public bool KuduHit = false;
 
-    public Sprite endScene;
-
-    public bool test;
+    
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -207,10 +206,7 @@ public class Hunter : MonoBehaviour
             GameObject.FindWithTag("Kudu").GetComponent<KuduController>().tpPlayerCounter = 0f;
         }
 
-        if (test)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = endScene;
-        }
+        
         //KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1
     }
     private void Update()
