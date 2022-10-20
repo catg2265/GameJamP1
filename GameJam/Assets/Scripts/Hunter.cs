@@ -40,6 +40,10 @@ public class Hunter : MonoBehaviour
     
     public bool Gamedeath;
     private Animator Death;
+    public Transform Lv2;
+    public Transform Lv3;
+    public int KuduhitCounter = 1;
+    public bool KuduHit = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -173,7 +177,7 @@ public class Hunter : MonoBehaviour
         else if(!touchGrass && !move)
         {
             Vector2 movement = new Vector2(moveX, 0f);
-            rb.AddForce(movement * (speed * 0.1f));   
+            rb.AddForce(movement * (speed * 0.2f));   
         }
         if(moveX > 0 && !move)
         {
@@ -183,10 +187,24 @@ public class Hunter : MonoBehaviour
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
+        
+        if (KuduhitCounter == 2 && KuduHit)
+        {
+            transform.position = Lv2.position;
+            KuduHit = false;
+        }
+
+        if (KuduhitCounter == 3 && KuduHit)
+        {
+            transform.position = Lv3.position;
+            KuduHit = false;
+        }
     }
     private void Update()
     {
         GetComponent<Animator>().SetBool("Bow", Gamebow);
+
+        
     }
     
 }
