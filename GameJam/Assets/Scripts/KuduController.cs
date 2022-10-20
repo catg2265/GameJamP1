@@ -55,7 +55,6 @@ public class KuduController : MonoBehaviour
         if (isRunning)
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
-            
             runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (runningCounter > 4f)
             {
@@ -64,13 +63,20 @@ public class KuduController : MonoBehaviour
                 {
                     transform.position = lvl2Pos.position;
                     runningCounter = 0f;
+                    extraCounter = 0f;
                     currentLevel++;
                 }
                 else if (currentLevel == 2)
                 {
                     transform.position = lvl3Pos.position;
                     runningCounter = 0f;
+                    extraCounter = 0f;
                     currentLevel++;
+                }
+                else if (currentLevel == 3)
+                {
+                    runningCounter = 0f;
+                    extraCounter = 0f;
                 }
             }
         }
