@@ -106,11 +106,11 @@ public class KuduController : MonoBehaviour
             }
         }
 
-       if (arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+       if (arrowHits == 1 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
         {
             tpPlayer();
         }
-        if (arrowHits == 3 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+        if (arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
         {
             tpPlayer();
         }
