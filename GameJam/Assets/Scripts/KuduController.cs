@@ -53,6 +53,7 @@ public class KuduController : MonoBehaviour
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
             // lower kudu speed a bit
+            kuduSpeed = 3f;
         }
         else if (kuduHealth <= 0)
         {
