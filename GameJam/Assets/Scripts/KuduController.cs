@@ -8,22 +8,30 @@ using UnityEngine;
 public class KuduController : MonoBehaviour
 {
     public Animator animator;
+    public RuntimeAnimatorController undamaged;
+    public RuntimeAnimatorController damaged;
     public bool alert = false;
     public bool isRunning = false;
     public float farCounter = 0f;
     public float closeCounter = 0f;
+    public float extraCounter = 0f;
     public bool stopCount = true;
     public Transform playerTransform;
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
     public float kuduHealth = 100f;
+    public int arrowHits;
+    public bool headshot;
 
-    public SpriteRenderer sprite;
-    //private bool isFacingRight = true;
+    SpriteRenderer sprite;
+    public Camera cam;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        headshot = false;
+        arrowHits = 0;
+        animator.runtimeAnimatorController = undamaged;
     }
 
     void Update()
@@ -42,18 +50,37 @@ public class KuduController : MonoBehaviour
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
         }
-        if (kuduHealth <= 50)
+        if (kuduHealth <= 50 && kuduHealth > 0)
         {
-            // play damaged animation
-            // change run animation to slower
+            animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
+            // !!!! Remember to stop player movement until teleported to next level
+            extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (extraCounter > 1)
+            {
+                isRunning = true;
+                kuduSpeed = 3f;
+            }
         }
         else if (kuduHealth <= 0)
         {
-            //play death animation
-            Destroy(gameObject);
+            if (arrowHits == 1 && headshot)
+            {
+                //play headshot death 1 arrow
+                animator.SetTrigger("onearrowhead");
+            }
+            else if (arrowHits == 2 && headshot)
+            {
+                //play headshot death 2 arrows
+                animator.SetTrigger("twoarrowhead");
+            }
+            else if (arrowHits == 2 && !headshot)
+            {
+                //play bodyshot death 2 arrows
+                animator.SetTrigger("bodyshot");
+            }
         }
 
-        if (transform.position.x > 20)
+        if (transform.position.x > cam.transform.position.x + 20)
         {
             Destroy(gameObject);
         }
