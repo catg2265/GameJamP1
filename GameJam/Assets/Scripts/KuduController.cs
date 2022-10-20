@@ -14,6 +14,7 @@ public class KuduController : MonoBehaviour
     public bool isRunning = false;
     public float farCounter = 0f;
     public float closeCounter = 0f;
+    public float extraCounter = 0f;
     public bool stopCount = true;
     public Transform playerTransform;
     public float alertDist = 5f;
@@ -52,8 +53,13 @@ public class KuduController : MonoBehaviour
         if (kuduHealth <= 50 && kuduHealth > 0)
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
-            // lower kudu speed a bit
-            kuduSpeed = 3f;
+            // !!!! Remember to stop player movement until teleported to next level
+            extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (extraCounter > 1)
+            {
+                isRunning = true;
+                kuduSpeed = 3f;
+            }
         }
         else if (kuduHealth <= 0)
         {
