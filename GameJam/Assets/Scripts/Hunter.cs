@@ -37,12 +37,21 @@ public class Hunter : MonoBehaviour
 
     public LineRenderer lineRenderer;
     public int positionResolution;
+    
+    public bool Gamedeath;
+    private Animator Death;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             touchGrass = true;
+        }
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            GetComponent<Animator>().SetTrigger("Death?");
+            GetComponent<CapsuleCollider2D>().size = new Vector2(0.2f, 0.5f);
+            speed = 0f;
         }
     }
 
@@ -104,6 +113,8 @@ public class Hunter : MonoBehaviour
         Bow = gameObject.GetComponent<Animator>();
         lineRenderer = FindObjectOfType<LineRenderer>();
         lineRenderer.positionCount = positionResolution*4;
+        Death = gameObject.GetComponent<Animator>();
+
     }
     void FixedUpdate()
     {
@@ -170,4 +181,5 @@ public class Hunter : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Bow", Gamebow);
     }
+    
 }

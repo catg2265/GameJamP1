@@ -3,10 +3,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< Updated upstream
   - Ground
   - Arrow
   - Water
   - Kudu
+=======
+  - Water
+  - Ground
+  - Arrow
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -41,6 +47,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3080274321
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
