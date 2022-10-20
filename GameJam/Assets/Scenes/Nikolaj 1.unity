@@ -255,8 +255,8 @@ MonoBehaviour:
   shotPoint: {fileID: 1676266429}
   Gamebow: 0
   GamenonBow: 0
-  targetoffset: {x: 10, y: 0, z: 0}
-  TimeToMaxDistance: 4
+  targetoffset: {x: 15, y: 0, z: 0}
+  TimeToMaxDistance: 2
 --- !u!114 &52842855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Follow: {fileID: 52842851}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -848,7 +848,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

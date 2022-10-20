@@ -89,7 +89,7 @@ public class Hunter : MonoBehaviour
         else if (yes == 0f)
         {
             Gamebow = false;
-            shoot(crosshair.transform.position);
+            Shoot(crosshair.transform.position);
             stopwatch = null;
             
            
@@ -98,11 +98,12 @@ public class Hunter : MonoBehaviour
         move = true;
     }
 
-    private void shoot(Vector3 launchForce)
+    private void Shoot(Vector3 launchForce)
     {
-            newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
-            newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce.x * 1.5f;
-       
+        newArrow = Instantiate(arrow, shotPoint.position, shotPoint.rotation);
+        launchForce -= transform.position;
+        newArrow.GetComponent<Rigidbody2D>().velocity = transform.right * Mathf.Abs(launchForce.x * 1.4f);
+        UnityEngine.Debug.Log(launchForce.x);
     }
 
     void Start()
@@ -163,12 +164,12 @@ public class Hunter : MonoBehaviour
 
         if(moveX > 0)
         {
-            flip.flipX = false;
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
         
         if(moveX < 0) 
         {
-            flip.flipX = true;
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
 
        
