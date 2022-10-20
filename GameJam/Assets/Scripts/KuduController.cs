@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
 
 public class KuduController : MonoBehaviour
 {
@@ -83,6 +84,7 @@ public class KuduController : MonoBehaviour
                 isRunning = true;
                 kuduSpeed = 3f;
             }
+            
         }
         else if (kuduHealth <= 0)
         {
@@ -103,6 +105,15 @@ public class KuduController : MonoBehaviour
                 animator.SetTrigger("bodyshot");
             }
         }
+
+       /* if (arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+        {
+            tpPlayer();
+        }
+        if (arrowHits == 3 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+        {
+            tpPlayer();
+        }*/
     }
 
     void Alert()
@@ -141,7 +152,12 @@ public class KuduController : MonoBehaviour
         animator.SetBool("Alert", spook);
         animator.SetBool("Close", run);
     }
-    
+
+    void tpPlayer()
+    {
+        //GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter++;
+        //GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit = true;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, alertDist);
