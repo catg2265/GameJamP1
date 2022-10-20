@@ -28,8 +28,7 @@ public class WaterCol : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Water"))
         {
-            Gamedeath = true;
-            GetComponent<Animator>().SetBool("Death?",Gamedeath);
+            GetComponent<Animator>().SetTrigger("Death?");
             GetComponent<CapsuleCollider2D>().size = new Vector2(0.2f, 0.5f);
         }
     }
