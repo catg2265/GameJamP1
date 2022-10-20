@@ -192,12 +192,18 @@ public class Hunter : MonoBehaviour
         {
             transform.position = Lv2.position;
             KuduHit = false;
+            GameObject.FindWithTag("Kudu").GetComponent<KuduController>();
         }
 
         if (KuduhitCounter == 3 && KuduHit)
         {
             transform.position = Lv3.position;
             KuduHit = false;
+        }
+
+        if (KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1)
+        {
+           
         }
     }
     private void Update()
