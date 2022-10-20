@@ -58,10 +58,10 @@ public class KuduController : MonoBehaviour
             runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (runningCounter > 4f)
             {
-                
+                stopCount = true;
+                isRunning = false;
                 if (currentLevel == 1)
                 {
-                    isRunning = false;
                     transform.position = lvl2Pos.position;
                     runningCounter = 0f;
                     extraCounter = 0f;
@@ -69,7 +69,6 @@ public class KuduController : MonoBehaviour
                 }
                 else if (currentLevel == 2)
                 {
-                    isRunning = false;
                     transform.position = lvl3Pos.position;
                     runningCounter = 0f;
                     extraCounter = 0f;
@@ -77,7 +76,6 @@ public class KuduController : MonoBehaviour
                 }
                 else if (currentLevel == 3)
                 {
-                    isRunning = false;
                     runningCounter = 0f;
                     extraCounter = 0f;
                 }
@@ -87,8 +85,10 @@ public class KuduController : MonoBehaviour
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
             // !!!! Remember to stop player movement until teleported to next level
-            
-            extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (!stopCount)
+            {
+                extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            }
             if (extraCounter > 1)
             {
                 isRunning = true;
@@ -144,9 +144,7 @@ public class KuduController : MonoBehaviour
         else
         {
             closeCounter = 0f;
-           // if (!stopCount)
-            //{
-                farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
                 if (farCounter > 10)
                 {
                     isRunning = false;
@@ -154,7 +152,6 @@ public class KuduController : MonoBehaviour
                 }
                 alert = false;
                 GetComponent<SpriteRenderer>().flipX = false;
-            //}
         }
     }
 

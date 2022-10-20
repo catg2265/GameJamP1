@@ -12,6 +12,7 @@ public class KuduCritDamage : MonoBehaviour
             GetComponentInParent<KuduController>().kuduHealth -= 100f;
             GetComponentInParent<KuduController>().arrowHits++;
             GetComponentInParent<KuduController>().headshot = true;
+            //GetComponentInParent<KuduController>().stopCount = false;
         }
     }
 }
