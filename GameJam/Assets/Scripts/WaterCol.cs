@@ -10,13 +10,11 @@ public class WaterCol : MonoBehaviour
     public bool Gamedeath;
     private Animator Death;
 
-    public float speed;
     
     // Start is called before the first frame update
     void Start()
     {
         Death = gameObject.GetComponent<Animator>();
-        speed = gameObject.GetComponent<movementTest>();
 
     }
 
@@ -32,10 +30,7 @@ public class WaterCol : MonoBehaviour
         {
             Gamedeath = true;
             GetComponent<Animator>().SetBool("Death?",Gamedeath);
-            speed = 0f;
             GetComponent<CapsuleCollider2D>().size = new Vector2(0.2f, 0.5f);
-
-
         }
     }
 }
