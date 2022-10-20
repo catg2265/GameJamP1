@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kudu wounded run
+  m_Name: Kudu running wounded
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1103037579, guid: b522642fe5a056645a050a44170664af, type: 3}
+      value: {fileID: 764129766, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - time: 0.21666667
+      value: {fileID: -1997009755, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - time: 0.43333334
+      value: {fileID: 32450848, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - time: 0.6166667
+      value: {fileID: 1610716097, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - time: 0.8333333
+      value: {fileID: 910384843, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +48,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1103037579, guid: b522642fe5a056645a050a44170664af, type: 3}
+    - {fileID: 764129766, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - {fileID: -1997009755, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - {fileID: 32450848, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - {fileID: 1610716097, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
+    - {fileID: 910384843, guid: 359e87b1aa34ecb41b5e151e4dfb3ef8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.84999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
