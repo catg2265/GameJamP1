@@ -19,7 +19,7 @@ public class Scenechange : MonoBehaviour
     void Update()
     {
         //if (GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter >= 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter >= 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1)
-        if (GameObject.FindWithTag("Kudu").GetComponent<KuduController>().currentLevel >= 3 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || GameObject.FindWithTag("Kudu").GetComponent<KuduController>().currentLevel >= 3 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1 )
+        if (GameObject.FindWithTag("Kudu").GetComponent<KuduController>().currentLevel >= 4 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || GameObject.FindWithTag("Kudu").GetComponent<KuduController>().currentLevel >= 4 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1 )
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = endScene;
             this.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Endscene");
