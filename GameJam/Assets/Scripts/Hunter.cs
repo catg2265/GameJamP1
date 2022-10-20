@@ -45,6 +45,9 @@ public class Hunter : MonoBehaviour
     public int KuduhitCounter = 1;
     public bool KuduHit = false;
 
+    public Sprite endScene;
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -192,18 +195,19 @@ public class Hunter : MonoBehaviour
         {
             transform.position = Lv2.position;
             KuduHit = false;
-            GameObject.FindWithTag("Kudu").GetComponent<KuduController>();
+            GameObject.FindWithTag("Kudu").GetComponent<KuduController>().tpPlayerCounter = 0f;
         }
 
         if (KuduhitCounter == 3 && KuduHit)
         {
             transform.position = Lv3.position;
             KuduHit = false;
+            GameObject.FindWithTag("Kudu").GetComponent<KuduController>().tpPlayerCounter = 0f;
         }
 
         if (KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1)
         {
-           
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = endScene;
         }
     }
     private void Update()

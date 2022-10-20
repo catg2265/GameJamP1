@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Endscene
+    uniqueID: 1298965215
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
