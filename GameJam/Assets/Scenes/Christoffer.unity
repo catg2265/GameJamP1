@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1124079079}
-  undamaged: {fileID: 9100000, guid: 0b7b89f5bda6570448d5cc5cc4e77f4f, type: 2}
+  undamaged: {fileID: 9100000, guid: f6cc4bd22a718004a89c5b2a822cc2bf, type: 2}
   damaged: {fileID: 9100000, guid: 5726c022edc743742b6d791e25b5cfb7, type: 2}
   alert: 0
   isRunning: 0
