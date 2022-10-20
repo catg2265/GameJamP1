@@ -30,6 +30,7 @@ public class KuduController : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         headshot = false;
         arrowHits = 0;
+        animator.runtimeAnimatorController = undamaged;
     }
 
     void Update()
