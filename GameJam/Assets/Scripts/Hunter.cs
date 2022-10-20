@@ -23,7 +23,7 @@ public class Hunter : MonoBehaviour
     public float jumpHeight = 0;
 
     private bool touchGrass = false;
-    private bool move;
+    public bool move;
 
     private float yes;
 

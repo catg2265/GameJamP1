@@ -78,6 +78,7 @@ public class KuduController : MonoBehaviour
                 {
                     runningCounter = 0f;
                     extraCounter = 0f;
+                    currentLevel++;
                 }
             }
         }
@@ -124,7 +125,15 @@ public class KuduController : MonoBehaviour
                 tpPlayer();
             }
         }
-        
+
+        if (isRunning)
+        {
+            GameObject.FindWithTag("Player").GetComponent<Hunter>().move = true;
+        }
+        else
+        {
+            GameObject.FindWithTag("Player").GetComponent<Hunter>().move = false;
+        }
     }
 
     void Alert()
