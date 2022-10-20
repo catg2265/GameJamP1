@@ -120,10 +120,10 @@ TextureImporter:
       name: Kudu idle-Sheet-sheet_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 56
-        height: 55
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Kudu idle-Sheet-sheet_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 64
         y: 0
-        width: 56
-        height: 52
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Kudu idle-Sheet-sheet_2
       rect:
         serializedVersion: 2
-        x: 132
+        x: 128
         y: 0
-        width: 56
-        height: 56
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
