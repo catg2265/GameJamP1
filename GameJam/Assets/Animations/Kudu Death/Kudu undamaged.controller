@@ -83,7 +83,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Alert damaged
+  m_Name: Alert
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -98,7 +98,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d16ebddb6d2f16e448d320173d151e40, type: 2}
+  m_Motion: {fileID: 7400000, guid: 181267a6c9563e34b8e482b463230000, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -192,7 +192,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kudu idle shot
+  m_Name: 'Kudu idle '
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -206,7 +206,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a848951024170a64487aeb0c7505afc0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 683dd44dd448e3a45aa36bc2dbd9f3e6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -337,7 +337,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kudu Wounded running
+  m_Name: Kudu running
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -351,7 +351,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 93c947106b7ecc041b86560f469dc665, type: 2}
+  m_Motion: {fileID: 7400000, guid: f3b88212d1486c6489776131f4b2f96a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
