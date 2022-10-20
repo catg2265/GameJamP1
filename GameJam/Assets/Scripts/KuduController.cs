@@ -163,8 +163,9 @@ public class KuduController : MonoBehaviour
 
     void tpPlayer()
     {
-        GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter++;
         GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit = true;
+        GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter++;
+        
     }
     private void OnDrawGizmos()
     {
