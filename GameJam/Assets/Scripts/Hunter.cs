@@ -216,6 +216,10 @@ public class Hunter : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Bow", Gamebow);
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         
     }
     
