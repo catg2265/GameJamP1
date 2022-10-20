@@ -106,14 +106,14 @@ public class KuduController : MonoBehaviour
             }
         }
 
-       /* if (arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+       if (arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
         {
             tpPlayer();
         }
         if (arrowHits == 3 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
         {
             tpPlayer();
-        }*/
+        }
     }
 
     void Alert()
@@ -155,8 +155,8 @@ public class KuduController : MonoBehaviour
 
     void tpPlayer()
     {
-        //GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter++;
-        //GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit = true;
+        GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduhitCounter++;
+        GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit = true;
     }
     private void OnDrawGizmos()
     {
