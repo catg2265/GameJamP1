@@ -60,18 +60,20 @@ public class KuduController : MonoBehaviour
             {
                 //play headshot death 1 arrow
                 animator.SetTrigger("onearrowhead");
+                Debug.Log("oneshot");
             }
             else if (arrowHits == 2 && headshot)
             {
                 //play headshot death 2 arrows
+                Debug.Log("Headshot");
                 animator.SetTrigger("twoarrowhead");
             }
             else if (arrowHits == 2 && !headshot)
             {
                 //play bodyshot death 2 arrows
+                Debug.Log("Bodyshot");
                 animator.SetTrigger("bodyshot");
             }
-            Destroy(gameObject);
         }
 
         if (transform.position.x > cam.transform.position.x + 20)
