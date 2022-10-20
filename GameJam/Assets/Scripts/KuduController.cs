@@ -52,6 +52,11 @@ public class KuduController : MonoBehaviour
             //play death animation
             Destroy(gameObject);
         }
+
+        if (transform.position.x > 20)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Alert()
