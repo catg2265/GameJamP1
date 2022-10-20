@@ -128,11 +128,11 @@ public class KuduController : MonoBehaviour
 
         if (isRunning)
         {
-            GameObject.FindWithTag("Player").GetComponent<Hunter>().move = true;
+            //GameObject.FindWithTag("Player").GetComponent<Hunter>().move = true;
         }
         else
         {
-            GameObject.FindWithTag("Player").GetComponent<Hunter>().move = false;
+            //GameObject.FindWithTag("Player").GetComponent<Hunter>().move = false;
         }
     }
 
