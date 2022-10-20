@@ -55,7 +55,7 @@ public class KuduController : MonoBehaviour
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
             
             runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
-            if (runningCounter > 10)
+            if (runningCounter > 7)
             {
                 isRunning = false;
                 if (currentLevel == 1)
@@ -112,32 +112,35 @@ public class KuduController : MonoBehaviour
 
     void Alert()
     {
-        if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
+        if (kuduHealth > 0)
         {
-            farCounter = 0f;
-            alert = true;
-            closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
-            if (closeCounter > 2)
+            if (Vector2.Distance(playerTransform.position,transform.position) < alertDist)
             {
-                farCounter = 10f;
-                isRunning = true;
-                closeCounter = 0f;
-            }
-        }
-        else
-        {
-            closeCounter = 0f;
-            if (!stopCount)
-            {
-                farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
-                if (farCounter > 10)
+                farCounter = 0f;
+                alert = true;
+                closeCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+                if (closeCounter > 2)
                 {
-                    isRunning = false;
-                    farCounter = 0;
+                    farCounter = 10f;
+                    isRunning = true;
+                    closeCounter = 0f;
                 }
+            }
+            else
+            {
+                closeCounter = 0f;
+                if (!stopCount)
+                {
+                    farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+                    if (farCounter > 10)
+                    {
+                        isRunning = false;
+                        farCounter = 0;
+                    }
 
-                alert = false;
-                GetComponent<SpriteRenderer>().flipX = false;
+                    alert = false;
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
             }
         }
     }
