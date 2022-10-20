@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 394547193}
   m_Layer: 0
   m_Name: ColliderHead
-  m_TagString: Untagged
+  m_TagString: Kudu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 644815021}
   m_Layer: 0
   m_Name: ColliderBody
-  m_TagString: Untagged
+  m_TagString: Kudu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 1124079082}
   m_Layer: 0
   m_Name: Kudu
-  m_TagString: Untagged
+  m_TagString: Kudu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -548,6 +548,7 @@ MonoBehaviour:
   isRunning: 0
   farCounter: 0
   closeCounter: 0
+  extraCounter: 0
   stopCount: 0
   playerTransform: {fileID: 1756663592}
   alertDist: 5
