@@ -8,8 +8,8 @@ public class KuduDamage : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Arrow"))
         {
-            GetComponent<KuduController>().kuduHealth -= 60f;
-            GetComponent<KuduController>().arrowHits++;
+            GetComponentInParent<KuduController>().kuduHealth -= 60f;
+            GetComponentInParent<KuduController>().arrowHits++;
         }
     }
 }

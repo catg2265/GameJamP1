@@ -9,9 +9,9 @@ public class KuduCritDamage : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Arrow"))
         {
-            GetComponent<KuduController>().kuduHealth -= 100f;
-            GetComponent<KuduController>().arrowHits++;
-            GetComponent<KuduController>().headshot = true;
+            GetComponentInParent<KuduController>().kuduHealth -= 100f;
+            GetComponentInParent<KuduController>().arrowHits++;
+            GetComponentInParent<KuduController>().headshot = true;
         }
     }
 }
