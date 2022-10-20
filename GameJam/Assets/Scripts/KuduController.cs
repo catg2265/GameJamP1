@@ -86,6 +86,7 @@ public class KuduController : MonoBehaviour
         }
         else if (kuduHealth <= 0)
         {
+            isRunning = false;
             if (arrowHits == 1 && headshot)
             {
                 //play headshot death 1 arrow
@@ -102,12 +103,6 @@ public class KuduController : MonoBehaviour
                 animator.SetTrigger("bodyshot");
             }
         }
-
-        
-        /*if (transform.position.x > cam.transform.position.x + 20)
-        {
-            Destroy(gameObject);
-        }*/
     }
 
     void Alert()
@@ -135,7 +130,6 @@ public class KuduController : MonoBehaviour
                     isRunning = false;
                     farCounter = 0;
                 }
-
                 alert = false;
                 GetComponent<SpriteRenderer>().flipX = false;
             }
