@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 359e87b1aa34ecb41b5e151e4dfb3ef8
+guid: 77cefbe55139f9646a1181aec32e9f28
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kudo Running wounded-sheet_0
+      name: Kudo Running wounded-sheet 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ada4633094c3b48b44a143fcf10f2c
-      internalID: 764129766
+      spriteID: b250e86a6e99af443b095b27538c0308
+      internalID: -1969828101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kudo Running wounded-sheet_1
+      name: Kudo Running wounded-sheet 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bffb68e23d86f6843b0b5cf462fe561c
-      internalID: -1997009755
+      spriteID: a21b2db60fc107748b5457d4853d7761
+      internalID: 508878514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kudo Running wounded-sheet_2
+      name: Kudo Running wounded-sheet 1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e424991a1698a6745abeca2261f7506c
-      internalID: 32450848
+      spriteID: 2f42ddf01421e6d44b52d362f35d1a3d
+      internalID: 390000064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kudo Running wounded-sheet_3
+      name: Kudo Running wounded-sheet 1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58336ce62fb3ad544a1db0f86d2c806f
-      internalID: 1610716097
+      spriteID: b71046f0b3e96af469c16345538170f1
+      internalID: 204331407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kudo Running wounded-sheet_4
+      name: Kudo Running wounded-sheet 1_4
       rect:
         serializedVersion: 2
         x: 256
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004d2bfb718cd714d8ac8b98525fd5aa
-      internalID: 910384843
+      spriteID: 8b120e57e8f678b4da3401dea1f34423
+      internalID: 1046768205
       vertices: []
       indices: 
       edges: []
@@ -225,18 +225,18 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kudo Running wounded-sheet_0: 764129766
-      Kudo Running wounded-sheet_2: 32450848
-      Kudo Running wounded-sheet_4: 910384843
-      Kudo Running wounded-sheet_3: 1610716097
-      Kudo Running wounded-sheet_1: -1997009755
+      Kudo Running wounded-sheet 1_4: 1046768205
+      Kudo Running wounded-sheet 1_0: -1969828101
+      Kudo Running wounded-sheet 1_2: 390000064
+      Kudo Running wounded-sheet 1_3: 204331407
+      Kudo Running wounded-sheet 1_1: 508878514
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
