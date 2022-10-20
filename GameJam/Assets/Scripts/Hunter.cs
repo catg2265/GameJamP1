@@ -47,6 +47,8 @@ public class Hunter : MonoBehaviour
 
     public Sprite endScene;
 
+    public bool test;
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -205,10 +207,11 @@ public class Hunter : MonoBehaviour
             GameObject.FindWithTag("Kudu").GetComponent<KuduController>().tpPlayerCounter = 0f;
         }
 
-        if (KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1)
+        if (test)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = endScene;
         }
+        //KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 0 || KuduhitCounter == 0 && GameObject.FindWithTag("Kudu").GetComponent<KuduController>().arrowHits == 1
     }
     private void Update()
     {
