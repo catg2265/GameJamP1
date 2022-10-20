@@ -144,8 +144,8 @@ public class KuduController : MonoBehaviour
         else
         {
             closeCounter = 0f;
-            if (!stopCount)
-            {
+           // if (!stopCount)
+            //{
                 farCounter += Mathf.Lerp(0, 1, Time.deltaTime);
                 if (farCounter > 10)
                 {
@@ -154,7 +154,7 @@ public class KuduController : MonoBehaviour
                 }
                 alert = false;
                 GetComponent<SpriteRenderer>().flipX = false;
-            }
+            //}
         }
     }
 
