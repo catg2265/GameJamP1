@@ -18110,16 +18110,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 975e51a0c152b6e47990aed0566031d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  line: {fileID: 0}
+  numOfLines: 0
+  spaceBetweenPoints: 0
+  newArrow: {fileID: 0}
   arrow: {fileID: 0}
   crosshair: {fileID: 0}
+  crosshair1: {fileID: 0}
   anime: {fileID: 0}
+  shotPoint: {fileID: 0}
   speed: 5
   jumpHeight: 0
-  shotPoint: {fileID: 0}
   Gamebow: 0
   GamenonBow: 0
   targetoffset: {x: 0, y: 0, z: 0}
   TimeToMaxDistance: 0
+  lineRenderer: {fileID: 0}
+  positionResolution: 0
+  seconds: 2
 --- !u!114 &1488623006
 MonoBehaviour:
   m_ObjectHideFlags: 0
