@@ -49,7 +49,7 @@ public class KuduController : MonoBehaviour
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
         }
-        if (kuduHealth <= 50)
+        if (kuduHealth <= 50 && kuduHealth > 0)
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
             // lower kudu speed a bit
@@ -60,18 +60,15 @@ public class KuduController : MonoBehaviour
             {
                 //play headshot death 1 arrow
                 animator.SetTrigger("onearrowhead");
-                Debug.Log("oneshot");
             }
             else if (arrowHits == 2 && headshot)
             {
                 //play headshot death 2 arrows
-                Debug.Log("Headshot");
                 animator.SetTrigger("twoarrowhead");
             }
             else if (arrowHits == 2 && !headshot)
             {
                 //play bodyshot death 2 arrows
-                Debug.Log("Bodyshot");
                 animator.SetTrigger("bodyshot");
             }
         }
