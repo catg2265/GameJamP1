@@ -8,6 +8,8 @@ using UnityEngine;
 public class KuduController : MonoBehaviour
 {
     public Animator animator;
+    public RuntimeAnimatorController undamaged;
+    public RuntimeAnimatorController damaged;
     public bool alert = false;
     public bool isRunning = false;
     public float farCounter = 0f;
@@ -17,9 +19,11 @@ public class KuduController : MonoBehaviour
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
     public float kuduHealth = 100f;
+    public int arrowHits = 0;
+    public bool headshot = false;
 
     public SpriteRenderer sprite;
-    //private bool isFacingRight = true;
+    public Camera cam;
 
     private void Start()
     {
@@ -44,16 +48,27 @@ public class KuduController : MonoBehaviour
         }
         if (kuduHealth <= 50)
         {
-            // play damaged animation
-            // change run animation to slower
+            animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
+            // lower kudu speed a bit
         }
         else if (kuduHealth <= 0)
         {
-            //play death animation
+            if (arrowHits == 1 && headshot)
+            {
+                //play headshot death 1 arrow
+            }
+            else if (arrowHits == 2 && headshot)
+            {
+                //play headshot death 2 arrows
+            }
+            else if (arrowHits == 2 && !headshot)
+            {
+                //play bodyshot death 2 arrows
+            }
             Destroy(gameObject);
         }
 
-        if (transform.position.x > 20)
+        if (transform.position.x > cam.transform.position.x + 20)
         {
             Destroy(gameObject);
         }
