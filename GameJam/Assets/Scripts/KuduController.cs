@@ -17,6 +17,7 @@ public class KuduController : MonoBehaviour
     public float closeCounter = 0f;
     public float extraCounter;
     public float runningCounter;
+    public float tpPlayerCounter;
     public bool stopCount = true;
     public Transform playerTransform;
     public Transform lvl2Pos;
@@ -106,9 +107,13 @@ public class KuduController : MonoBehaviour
             }
         }
 
-       if (arrowHits == 1 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit || alert && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit || arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
-        {
-            tpPlayer();
+       if (arrowHits == 1 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit || isRunning && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit || arrowHits == 2 && !GameObject.FindWithTag("Player").GetComponent<Hunter>().KuduHit)
+       {
+           tpPlayerCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (tpPlayerCounter > 3f)
+            {
+                tpPlayer();
+            }
         }
         
     }
