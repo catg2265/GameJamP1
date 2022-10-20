@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Water
   - Kudu
+  - Arrow
   layers:
   - Default
   - TransparentFX
