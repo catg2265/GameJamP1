@@ -14,14 +14,18 @@ public class KuduController : MonoBehaviour
     public bool isRunning = false;
     public float farCounter = 0f;
     public float closeCounter = 0f;
-    public float extraCounter = 0f;
+    public float extraCounter;
+    public float runningCounter;
     public bool stopCount = true;
     public Transform playerTransform;
+    public Transform lvl2Pos;
+    public Transform lvl3Pos;
     public float alertDist = 5f;
     public float kuduSpeed = 5f;
     public float kuduHealth = 100f;
     public int arrowHits;
     public bool headshot;
+    public int currentLevel = 1;
 
     SpriteRenderer sprite;
     public Camera cam;
@@ -49,11 +53,28 @@ public class KuduController : MonoBehaviour
         if (isRunning)
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
+            runningCounter = 0f;
+            runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
+            if (runningCounter > 10)
+            {
+                isRunning = false;
+                if (currentLevel <= 2)
+                {
+                    transform.position = lvl2Pos.position;
+                    currentLevel++;
+                }
+                else if (currentLevel >= 3)
+                {
+                    transform.position = lvl3Pos.position;
+                    currentLevel++;
+                }
+            }
         }
         if (kuduHealth <= 50 && kuduHealth > 0)
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
             // !!!! Remember to stop player movement until teleported to next level
+            extraCounter = 0f;
             extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (extraCounter > 1)
             {
@@ -80,10 +101,11 @@ public class KuduController : MonoBehaviour
             }
         }
 
-        if (transform.position.x > cam.transform.position.x + 20)
+        
+        /*if (transform.position.x > cam.transform.position.x + 20)
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 
     void Alert()
