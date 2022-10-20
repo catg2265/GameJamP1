@@ -53,7 +53,7 @@ public class KuduController : MonoBehaviour
         if (isRunning)
         {
             transform.position += Vector3.right * (kuduSpeed * Time.deltaTime);
-            runningCounter = 0f;
+            
             runningCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (runningCounter > 10)
             {
@@ -61,11 +61,13 @@ public class KuduController : MonoBehaviour
                 if (currentLevel == 1)
                 {
                     transform.position = lvl2Pos.position;
+                    runningCounter = 0f;
                     currentLevel++;
                 }
                 else if (currentLevel == 2)
                 {
                     transform.position = lvl3Pos.position;
+                    runningCounter = 0f;
                     currentLevel++;
                 }
             }
@@ -74,7 +76,7 @@ public class KuduController : MonoBehaviour
         {
             animator.runtimeAnimatorController = damaged as RuntimeAnimatorController;
             // !!!! Remember to stop player movement until teleported to next level
-            extraCounter = 0f;
+            
             extraCounter += Mathf.Lerp(0, 1, Time.deltaTime);
             if (extraCounter > 1)
             {
