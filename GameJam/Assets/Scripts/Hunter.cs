@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using Debug = System.Diagnostics.Debug;
 
 public class Hunter : MonoBehaviour
 {
+    public GameObject enterKey;
     public GameObject newArrow;
     public GameObject arrow;
     public GameObject crosshair;
@@ -60,6 +62,8 @@ public class Hunter : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("Death?");
             GetComponent<CapsuleCollider2D>().size = new Vector2(0.2f, 0.5f);
+            enterKey.SetActive(true);
+            this.enabled = false;
             speed = 0f;
         }
     }
@@ -130,7 +134,7 @@ public class Hunter : MonoBehaviour
         lineRenderer = FindObjectOfType<LineRenderer>();
         lineRenderer.positionCount = positionResolution*4;
         Death = gameObject.GetComponent<Animator>();
-
+        enterKey.SetActive(false);
     }
     void FixedUpdate()
     {
@@ -220,6 +224,8 @@ public class Hunter : MonoBehaviour
         {
             Application.Quit();
         }
+
+        
         
     }
     

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem.DualShock;
 
 public class KuduController : MonoBehaviour
@@ -32,6 +33,10 @@ public class KuduController : MonoBehaviour
     SpriteRenderer sprite;
     public Camera cam;
 
+    
+    
+    public GameObject endScene;
+    public GameObject Gameover;
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -42,6 +47,29 @@ public class KuduController : MonoBehaviour
 
     void Update()
     {
+        if (currentLevel >= 4 && arrowHits == 0 || currentLevel >= 4 &&arrowHits == 1 )
+        {
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = endScene;
+            //this.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Endscene");
+            endScene.SetActive(true);
+        }
+
+        if (kuduHealth <= 0)
+        {
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = Gameover;
+            //this.gameObject.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Endscene");
+            Gameover.SetActive(true);
+        }
+        
+        
+        
+        
+        
+        
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("Main");
+        }
         Alert();
         AnimateKudu(isRunning, alert);
         if (alert & !isRunning)
