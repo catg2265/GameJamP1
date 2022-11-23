@@ -37,7 +37,7 @@ public class enemy : MonoBehaviour
     {
         if (life.gameObject.CompareTag("Player"))
         {
-            
+            anim.SetTrigger("Bite");
             player.gameObject.SetActive(false);
         }
     }
