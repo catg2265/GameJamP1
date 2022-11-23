@@ -2472,10 +2472,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: thor
       objectReference: {fileID: 0}
+    - target: {fileID: 875880231291930896, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: enemy
       value: 
       objectReference: {fileID: 1390853297}
+    - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: attackRayRange
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 875880231291930900, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2519,6 +2527,10 @@ PrefabInstance:
     - target: {fileID: 875880231291930900, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 875880232263480032, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
