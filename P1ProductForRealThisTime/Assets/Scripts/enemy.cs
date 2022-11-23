@@ -6,6 +6,7 @@ using UnityEngine;
 public class enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Collider2D c2D;
     [SerializeField] private GameObject player;
     [SerializeField] private Animator anim;
     public float speed = 1f;
@@ -15,7 +16,7 @@ public class enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        c2D = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -24,6 +25,8 @@ public class enemy : MonoBehaviour
         {
             
             anim.SetBool("IsDead", true);
+            rb.bodyType = RigidbodyType2D.Static;
+            c2D.enabled = false;
         }
     }
 
@@ -52,7 +55,6 @@ public class enemy : MonoBehaviour
         if (life.gameObject.CompareTag("Player"))
         {
             anim.SetTrigger("Bite");
-            player.gameObject.SetActive(false);
         }
     }
 }

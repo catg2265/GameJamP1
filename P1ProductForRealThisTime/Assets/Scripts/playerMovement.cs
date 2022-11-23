@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 public class playerMovement : MonoBehaviour
 {
@@ -36,9 +37,11 @@ public class playerMovement : MonoBehaviour
            {
                if (touchGrass)
                {
-                   rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
                    touchGrass = false;
+                   rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
                }
+                   
+                   
            }
        }
    
@@ -59,19 +62,19 @@ public class playerMovement : MonoBehaviour
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
 
-           if (hit.collider != null)
-           {
-               print("you hit");
-               string raycastreturn = hit.collider.gameObject.name;
-               foundEnemy = GameObject.Find(raycastreturn);
-               foundEnemy.GetComponent<enemy>().isHit = true;
-               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
-           }
-           else
-           {
-               print("you didnt it");
-               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
-           }
+               if (hit.collider != null)
+               {
+                   print("you hit");
+                   string raycastreturn = hit.collider.gameObject.name;
+                   foundEnemy = GameObject.Find(raycastreturn);
+                   foundEnemy.GetComponent<enemy>().isHit = true;
+                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
+               }
+               else
+               {
+                   print("you didnt it");
+                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
+               }
        }
 
     }
