@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,21 @@ public class enemy : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private Animator anim;
     public float speed = 1f;
+
+    public bool isHit = false;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         
+    }
+
+    private void Update()
+    {
+        if (isHit)
+        {
+            anim.SetBool("IsDead", true);
+        }
     }
 
     // Update is called once per frame

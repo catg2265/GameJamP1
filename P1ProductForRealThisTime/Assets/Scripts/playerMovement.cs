@@ -17,6 +17,7 @@ public class playerMovement : MonoBehaviour
        [SerializeField] private float attackRayRange;
        public LayerMask layerMask;
        public GameObject enemy;
+       private GameObject foundEnemy;
        
        void Start()
        {
@@ -61,7 +62,9 @@ public class playerMovement : MonoBehaviour
            if (hit.collider != null)
            {
                print("you hit");
-               enemy.SetActive((false));
+               string raycastreturn = hit.collider.gameObject.name;
+               foundEnemy = GameObject.Find(raycastreturn);
+               foundEnemy.GetComponent<enemy>().isHit = true;
                Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
            }
            else
