@@ -5,8 +5,9 @@ using UnityEngine;
 public class enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public GameObject player;
-    public float speed = 1;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Animator anim;
+    public float speed = 1f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +37,7 @@ public class enemy : MonoBehaviour
     {
         if (life.gameObject.CompareTag("Player"))
         {
+            
             player.gameObject.SetActive(false);
         }
     }
