@@ -108,10 +108,10 @@ TextureImporter:
       name: Thor the main character idle_0
       rect:
         serializedVersion: 2
-        x: 17
+        x: 0
         y: 0
-        width: 28
-        height: 50
+        width: 0
+        height: 0
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,136 +125,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_1
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cbdf05dc1f396d41948afe856da322f
-      internalID: -134129159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_2
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e28fc4a1881e5d45a44cafafae12526
-      internalID: 734927342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_3
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b1c35be903f7bd42a7a3b0ce0cba334
-      internalID: -659786917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_4
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f28b2e4195bc6e44e8b7461612a03d04
-      internalID: 1457938669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_5
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3f4201b3e79ad5448651c7c5361eae3
-      internalID: 57145588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor the main character idle_6
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 0
-        width: 28
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56a9ea8d05904b247bf4db85c4519895
-      internalID: 12916686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 710038f9d8815644c8a26abc3c712388
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -262,13 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Thor the main character idle_3: -659786917
-      Thor the main character idle_4: 1457938669
-      Thor the main character idle_5: 57145588
-      Thor the main character idle_2: 734927342
       Thor the main character idle_0: 1222822986803431613
-      Thor the main character idle_1: -134129159
-      Thor the main character idle_6: 12916686
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
