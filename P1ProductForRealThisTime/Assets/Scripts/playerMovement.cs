@@ -13,6 +13,11 @@ public class playerMovement : MonoBehaviour
        private float jumpY;
        public float jumpHeight = 1;
        
+       public GameObject attackRay;
+       [SerializeField] private float attackRayRange;
+       public LayerMask layerMask;
+       public GameObject enemy;
+       
        void Start()
        {
            rb = GetComponent<Rigidbody2D>();
@@ -47,4 +52,23 @@ public class playerMovement : MonoBehaviour
        {
            rb.velocity = new Vector2(movementX * speed, rb.velocity.y);
        }
+
+
+       private void OnFire()
+       {
+           RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
+
+           if (hit.collider != null)
+           {
+               print("you hit");
+               enemy.SetActive((false));
+               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
+           }
+           else
+           {
+               print("you didnt it");
+               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
+           }
+       }
+
     }
