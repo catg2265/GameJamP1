@@ -119,91 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 2f3f09f67e4ecfd4b9d5d0cea68776c6
-      internalID: -970038080
-=======
-      spriteID: 5ce4728fc424a41429337ea24e7a7048
-      internalID: 1237114971
->>>>>>> Stashed changes
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thor walking_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream
-      spriteID: 2b439d19342c01d478aa68de96c6ea94
-      internalID: 349594979
-=======
-      spriteID: 940e768895f05a54582c7f2fa8819456
-      internalID: -1060405841
->>>>>>> Stashed changes
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thor walking_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream
-      spriteID: 092102e85e7c4b4459c94383697330c9
-      internalID: -29206974
-=======
-      spriteID: 7c5004d817c8d464384fedcfdfc6a1f1
-      internalID: -1463830128
->>>>>>> Stashed changes
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thor walking_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream
-      spriteID: de243d24042b5834ea069a9595eedd9f
-      internalID: 1458448774
-=======
-      spriteID: 7c5c6764fb04ab44787ea58c5dd56133
-      internalID: -1392255390
->>>>>>> Stashed changes
+      spriteID: 122b1d52a71c52130800000000000000
+      internalID: 3541449412361433633
       vertices: []
       indices: 
       edges: []
@@ -211,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -219,17 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream
-      thor walking_2: -29206974
-      thor walking_1: 349594979
-      thor walking_0: -970038080
-      thor walking_3: 1458448774
-=======
-      thor walking_2: -1463830128
-      thor walking_1: -1060405841
-      thor walking_0: 1237114971
-      thor walking_3: -1392255390
->>>>>>> Stashed changes
+      thor walking_0: 3541449412361433633
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
