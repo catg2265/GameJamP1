@@ -22,27 +22,29 @@ public class enemy : MonoBehaviour
     {
         if (isHit)
         {
+            
             anim.SetBool("IsDead", true);
         }
     }
 
     // Update is called once per frame
     void FixedUpdate()
-    
     {
-        if (player.transform.position.x < transform.position.x)
+        if (!isHit)
         {
-            Vector2 left = Vector2.left;
-            rb.velocity = new Vector2(left.x * speed, rb.velocity.y);
+            if (player.transform.position.x < transform.position.x)
+            {
+                Vector2 left = Vector2.left;
+                rb.velocity = new Vector2(left.x * speed, rb.velocity.y);
 
-        }
+            }
         
-        else if (player.transform.position.x > transform.position.x)
-        {
-            Vector2 right = Vector2.right;
-            rb.velocity = new Vector2(right.x * speed, rb.velocity.y);
+            else if (player.transform.position.x > transform.position.x)
+            {
+                Vector2 right = Vector2.right;
+                rb.velocity = new Vector2(right.x * speed, rb.velocity.y);
+            }
         }
-        
     }
     
     public void OnCollisionEnter2D(Collision2D life)
