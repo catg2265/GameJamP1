@@ -53,7 +53,10 @@ AnimatorState:
   m_CycleOffsetParameter: 
   m_TimeParameter: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 --- !u!1102 &-5698498332341361425
 AnimatorState:
   serializedVersion: 6
@@ -80,6 +83,9 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 --- !u!91 &9100000
 AnimatorController:
@@ -90,6 +96,7 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnimatorParameters:
   - m_Name: walk
     m_Type: 4
@@ -97,6 +104,9 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
+=======
+  m_AnimatorParameters: []
+>>>>>>> main
 =======
   m_AnimatorParameters: []
 >>>>>>> main
