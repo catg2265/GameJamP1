@@ -108,24 +108,39 @@ TextureImporter:
       name: Thor the main character idle_0
       rect:
         serializedVersion: 2
+<<<<<<< Updated upstream
         x: 0
         y: 0
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+        x: 17
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: eb424facc12e8924facda2f8af174cfd
       internalID: -356877501
+=======
+      spriteID: 62f42d01fc4639844aa4c42d2423a53e
+      internalID: 1715022903
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_1
       rect:
         serializedVersion: 2
@@ -135,18 +150,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: b471523456690264680415dfe1600052
       internalID: -1089308086
+=======
+      spriteID: e657365ebd1087045903af3916bb5784
+      internalID: -439414611
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_2
       rect:
         serializedVersion: 2
@@ -156,18 +188,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 27c9192b0f86768478d1870eac93ba66
       internalID: -511578949
+=======
+      spriteID: adf106ec5d85e3c42b677f550545ef32
+      internalID: 892168901
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_3
       rect:
         serializedVersion: 2
@@ -177,18 +226,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: db2e27c7207bdb74784e51a5275d5efe
       internalID: 1901071370
+=======
+      spriteID: 287c3fd50d281014f886c55cf3d018ec
+      internalID: -694480298
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_4
       rect:
         serializedVersion: 2
@@ -198,18 +264,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: fd5eb46ec87980e47a76daec2ce6ecbf
       internalID: 1549031334
+=======
+      spriteID: 8e50fc2cd8668b6439cf89371292211b
+      internalID: -22580661
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_5
       rect:
         serializedVersion: 2
@@ -219,18 +302,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_8
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: b76caf718efe31544bc169a5bc41de29
       internalID: -468474728
+=======
+      spriteID: b24565f7236758f45ba5970d9b15f3c0
+      internalID: 501264613
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_6
       rect:
         serializedVersion: 2
@@ -240,18 +340,35 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_9
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 49a04c5cf90d8eb4ea8e8aca2963385e
       internalID: 886844847
+=======
+      spriteID: 94680f33e85fae74cb7afcd1fff2d7c7
+      internalID: 1243247640
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: Thor the main character idle_7
       rect:
         serializedVersion: 2
@@ -261,13 +378,29 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Thor the main character idle_10
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 60506b80e4e0fe14da86293d07c26ea8
       internalID: 2118112313
+=======
+      spriteID: 2ee84df1b031eac469231a88e591fa7d
+      internalID: 550828145
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -283,6 +416,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< Updated upstream
       Thor the main character idle_3: 1901071370
       Thor the main character idle_4: 1549031334
       Thor the main character idle_5: -468474728
@@ -291,6 +425,19 @@ TextureImporter:
       Thor the main character idle_0: -356877501
       Thor the main character idle_1: -1089308086
       Thor the main character idle_6: 886844847
+=======
+      Thor the main character idle_3: 892168901
+      Thor the main character idle_4: -1724998711
+      Thor the main character idle_9: 1243247640
+      Thor the main character idle_5: -694480298
+      Thor the main character idle_2: -439414611
+      Thor the main character idle_7: -22580661
+      Thor the main character idle_0: 1715022903
+      Thor the main character idle_10: 550828145
+      Thor the main character idle_1: 2103576416
+      Thor the main character idle_8: 501264613
+      Thor the main character idle_6: 1021588006
+>>>>>>> Stashed changes
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
