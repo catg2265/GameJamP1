@@ -76,11 +76,10 @@ public class playerMovement : MonoBehaviour
        private void OnFire()
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
-
+           thorAnima.SetTrigger("rangedAttack");
                if (hit.collider != null)
                {
                    print("you hit");
-                   thorAnima.SetTrigger("rangedAttack");
                    string raycastreturn = hit.collider.gameObject.name;
                    foundEnemy = GameObject.Find(raycastreturn);
                    foundEnemy.GetComponent<enemy>().isHit = true;
