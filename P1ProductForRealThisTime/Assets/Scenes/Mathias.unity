@@ -10653,6 +10653,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   enemy: {fileID: 1011221872}
+  thorAnima: {fileID: 1388012073}
 --- !u!212 &1388012077
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.Serialization;
 
 public class playerMovement : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class playerMovement : MonoBehaviour
        public LayerMask layerMask;
        public GameObject enemy;
        private GameObject foundEnemy;
-       
+       [SerializeField] private Animator thorAnima;
        void Start()
        {
            rb = GetComponent<Rigidbody2D>();
@@ -39,10 +40,23 @@ public class playerMovement : MonoBehaviour
                {
                    touchGrass = false;
                    rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
+                   
+                   thorAnima.SetBool("touchGrass", false);
                }
                    
                    
            }
+
+           if (movementVector.x > 0 || movementVector.x < 0)
+           {
+               thorAnima.SetBool("Velocity", true);
+           }
+           else
+           {
+               thorAnima.SetBool("Velocity", false);
+           }
+           
+          
        }
    
        void OnCollisionEnter2D(Collision2D other)
@@ -50,6 +64,7 @@ public class playerMovement : MonoBehaviour
            if (other.gameObject.CompareTag("Ground"))
            {
                touchGrass = true;
+               thorAnima.SetBool("touchGrass", true);
            }
        }
        void FixedUpdate()
