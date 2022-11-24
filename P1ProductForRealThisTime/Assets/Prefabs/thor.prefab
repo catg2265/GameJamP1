@@ -110,6 +110,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1088
   enemy: {fileID: 0}
+  thorAnima: {fileID: 0}
 --- !u!50 &875880231291930901
 Rigidbody2D:
   serializedVersion: 4
@@ -194,8 +195,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021740139, y: -0.04619783}
-  m_Size: {x: 0.722819, y: 1.4809746}
+  m_Offset: {x: 0.0011931062, y: -0.2585172}
+  m_Size: {x: 0.722819, y: 1.4809748}
   m_Direction: 0
 --- !u!1 &875880232263480032
 GameObject:
