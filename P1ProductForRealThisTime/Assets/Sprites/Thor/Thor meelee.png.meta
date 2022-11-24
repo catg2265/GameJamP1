@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f603fb9797f249442b010d6319edf0d8
+guid: 6216d8e0ccad31942a0207a344370e30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,181 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thor Hammer attack ranged_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47104e6df32554a48a9f82c75e33bec4
-      internalID: -107513170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44a2c3a47345a8b4bb5b32f4aa46da20
-      internalID: 135345414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dccb46a9fca25d542bb4b2eee5e2c563
-      internalID: -541704462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0fa6d5923ecc8e4085aacb163cc66ae
-      internalID: 364272627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2ebbe980d19ba7439f0cd1ef4cd4059
-      internalID: -291878794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72efe7f7f715c72429126e1d4ae4e447
-      internalID: 1770456010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_6
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8019414333e38a047b28858f2eedcd34
-      internalID: -1641551766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_7
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b88daf243ff05b7489bbf821f7d2c03a
-      internalID: -1499075909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thor Hammer attack ranged_8
+      name: Thor meelee_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 64
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 388bb88222dd8dc4f977b713650d1dbe
-      internalID: 1143845776
+      spriteID: 81342930f59a7bc43aa0ab8ba88ddd9e
+      internalID: 1902706610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thor Hammer attack ranged_9
+      name: Thor meelee_1
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 64
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8bff69e5c119ef4995b0a12ad8e4dab
-      internalID: 1199444780
+      spriteID: d78e1820b5fe1f84ea84a7828a9319fa
+      internalID: -1398687220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thor Hammer attack ranged_11
+      name: Thor meelee_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
-        height: 64
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e66fbfff2875d4f96daa34041bca16
-      internalID: 1960142084
+      spriteID: 9c49feedc33ef884ea1961b4bb9b0f8b
+      internalID: 1834333476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thor Hammer attack ranged_12
+      name: Thor meelee_3
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 64
-        height: 64
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448af0b85a34bb4478664db8e8770eba
-      internalID: -1198554788
+      spriteID: fc40c8717b3f44e44b1de8928f52911e
+      internalID: 906733224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thor Hammer attack ranged_10
+      name: Thor meelee_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 512
         y: 0
         width: 64
-        height: 64
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,8 +203,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e40d61c498f292f40a33636e3bacfddd
-      internalID: 855063768
+      spriteID: 9545eea73cfff4746af7b5831e60e627
+      internalID: -1746108055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721b7b5a39f35c74fae9a248f453f58e
+      internalID: 1259338740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d4680a7de5ded4cb8152e18884bae6
+      internalID: 175007850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f1b7c1bf0c62d4985ba53a79a2ccdf
+      internalID: 1409893497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fc77bf998124e4c8c92d60d92179a6
+      internalID: 1698737176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a1b4099612a7e4a9885968e1a02c14
+      internalID: 1855844740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b5225f0a3470342b416c06f40f4c9a
+      internalID: -1392463641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e69ec8498e27749b823a8da234ff0e
+      internalID: -146100467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbca41d345a81d47903f0892f61de68
+      internalID: 1349172703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thor meelee_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146ff2e6ec475ff41ad5a945d8c7adfb
+      internalID: -1631059773
       vertices: []
       indices: 
       edges: []
@@ -388,19 +409,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Thor Hammer attack ranged_1: 135345414
-      Thor Hammer attack ranged_10: 855063768
-      Thor Hammer attack ranged_9: 1199444780
-      Thor Hammer attack ranged_11: 1960142084
-      Thor Hammer attack ranged_12: -1198554788
-      Thor Hammer attack ranged_4: -291878794
-      Thor Hammer attack ranged_0: -107513170
-      Thor Hammer attack ranged_5: 1770456010
-      Thor Hammer attack ranged_2: -541704462
-      Thor Hammer attack ranged_6: -1641551766
-      Thor Hammer attack ranged_7: -1499075909
-      Thor Hammer attack ranged_3: 364272627
-      Thor Hammer attack ranged_8: 1143845776
+      Thor meelee_12: 1349172703
+      Thor meelee_10: -1392463641
+      Thor meelee_5: 1259338740
+      Thor meelee_13: -1631059773
+      Thor meelee_1: -1398687220
+      Thor meelee_4: -1746108055
+      Thor meelee_0: 1902706610
+      Thor meelee_2: 1834333476
+      Thor meelee_11: -146100467
+      Thor meelee_9: 1855844740
+      Thor meelee_6: 175007850
+      Thor meelee_8: 1698737176
+      Thor meelee_3: 906733224
+      Thor meelee_7: 1409893497
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

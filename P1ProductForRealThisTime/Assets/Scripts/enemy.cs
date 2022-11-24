@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,38 +6,55 @@ using UnityEngine;
 public class enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public GameObject player;
-    public float speed = 1;
+    private Collider2D c2D;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Animator anim;
+    public float speed = 1f;
+
+    public bool isHit = false;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        c2D = GetComponent<Collider2D>();
+    }
+
+    private void Update()
+    {
+        if (isHit)
+        {
+            
+            anim.SetBool("IsDead", true);
+            rb.bodyType = RigidbodyType2D.Static;
+            c2D.enabled = false;
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
-    
     {
-        if (player.transform.position.x < transform.position.x)
+        if (!isHit)
         {
-            Vector2 left = Vector2.left;
-            rb.velocity = new Vector2(left.x * speed, rb.velocity.y);
+            if (player.transform.position.x < transform.position.x)
+            {
+                Vector2 left = Vector2.left;
+                rb.velocity = new Vector2(left.x * speed, rb.velocity.y);
 
-        }
+            }
         
-        else if (player.transform.position.x > transform.position.x)
-        {
-            Vector2 right = Vector2.right;
-            rb.velocity = new Vector2(right.x * speed, rb.velocity.y);
+            else if (player.transform.position.x > transform.position.x)
+            {
+                Vector2 right = Vector2.right;
+                rb.velocity = new Vector2(right.x * speed, rb.velocity.y);
+            }
         }
-        
     }
     
-    public void OnCollisionEnter2D(Collision2D life)
+    public void OnCollisionEnter2D(Collision2D col)
     {
-        if (life.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
-            player.gameObject.SetActive(false);
+            anim.SetTrigger("Bite");
         }
     }
 }

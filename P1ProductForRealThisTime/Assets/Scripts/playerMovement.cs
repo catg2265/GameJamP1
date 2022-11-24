@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.Serialization;
 
 public class playerMovement : MonoBehaviour
 {
@@ -17,7 +19,8 @@ public class playerMovement : MonoBehaviour
        [SerializeField] private float attackRayRange;
        public LayerMask layerMask;
        public GameObject enemy;
-       
+       private GameObject foundEnemy;
+       [SerializeField] private Animator thorAnima;
        void Start()
        {
            rb = GetComponent<Rigidbody2D>();
@@ -35,10 +38,25 @@ public class playerMovement : MonoBehaviour
            {
                if (touchGrass)
                {
-                   rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
                    touchGrass = false;
+                   rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
+                   
+                   thorAnima.SetBool("touchGrass", false);
                }
+                   
+                   
            }
+
+           if (movementVector.x > 0 || movementVector.x < 0)
+           {
+               thorAnima.SetBool("Velocity", true);
+           }
+           else
+           {
+               thorAnima.SetBool("Velocity", false);
+           }
+           
+          
        }
    
        void OnCollisionEnter2D(Collision2D other)
@@ -46,6 +64,7 @@ public class playerMovement : MonoBehaviour
            if (other.gameObject.CompareTag("Ground"))
            {
                touchGrass = true;
+               thorAnima.SetBool("touchGrass", true);
            }
        }
        void FixedUpdate()
@@ -58,17 +77,20 @@ public class playerMovement : MonoBehaviour
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
 
-           if (hit.collider != null)
-           {
-               print("you hit");
-               enemy.SetActive((false));
-               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
-           }
-           else
-           {
-               print("you didnt it");
-               Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
-           }
+               if (hit.collider != null)
+               {
+                   print("you hit");
+                   thorAnima.SetTrigger("rangedAttack");
+                   string raycastreturn = hit.collider.gameObject.name;
+                   foundEnemy = GameObject.Find(raycastreturn);
+                   foundEnemy.GetComponent<enemy>().isHit = true;
+                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
+               }
+               else
+               {
+                   print("you didnt it");
+                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
+               }
        }
 
     }
