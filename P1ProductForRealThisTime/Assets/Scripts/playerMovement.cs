@@ -92,4 +92,9 @@ public class playerMovement : MonoBehaviour
                }
        }
 
+       private void OnFireRight()
+       {
+           
+       }
+
     }
