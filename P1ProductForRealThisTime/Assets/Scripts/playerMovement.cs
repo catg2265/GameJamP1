@@ -80,6 +80,7 @@ public class playerMovement : MonoBehaviour
                if (hit.collider != null)
                {
                    print("you hit");
+                   thorAnima.SetTrigger("rangedAttack");
                    string raycastreturn = hit.collider.gameObject.name;
                    foundEnemy = GameObject.Find(raycastreturn);
                    foundEnemy.GetComponent<enemy>().isHit = true;
