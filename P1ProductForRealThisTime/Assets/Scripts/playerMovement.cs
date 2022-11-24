@@ -76,11 +76,10 @@ public class playerMovement : MonoBehaviour
        private void OnFire()
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
-
+           thorAnima.SetTrigger("meleeAttack");
                if (hit.collider != null)
                {
                    print("you hit");
-                   thorAnima.SetTrigger("rangedAttack");
                    string raycastreturn = hit.collider.gameObject.name;
                    foundEnemy = GameObject.Find(raycastreturn);
                    foundEnemy.GetComponent<enemy>().isHit = true;
@@ -91,6 +90,11 @@ public class playerMovement : MonoBehaviour
                    print("you didnt it");
                    Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
                }
+       }
+
+       private void OnFireRight()
+       {
+           
        }
 
     }
