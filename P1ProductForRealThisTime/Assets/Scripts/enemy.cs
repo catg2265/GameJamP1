@@ -50,9 +50,9 @@ public class enemy : MonoBehaviour
         }
     }
     
-    public void OnCollisionEnter2D(Collision2D life)
+    public void OnCollisionEnter2D(Collision2D col)
     {
-        if (life.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
             anim.SetTrigger("Bite");
         }
