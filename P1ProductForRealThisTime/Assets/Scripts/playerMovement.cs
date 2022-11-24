@@ -76,7 +76,7 @@ public class playerMovement : MonoBehaviour
        private void OnFire()
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
-           thorAnima.SetTrigger("rangedAttack");
+           thorAnima.SetTrigger("meleeAttack");
                if (hit.collider != null)
                {
                    print("you hit");
