@@ -16,6 +16,9 @@ public class ObstaclePatrol : MonoBehaviour
     void Start()
     {
         _istransformNotNull = transform != null;
+        Vector3 localscale = transform.localScale;
+        localscale.x *= -1f;
+        transform.localScale = localscale;
     }
 
     // Update is called once per frame
