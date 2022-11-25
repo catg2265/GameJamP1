@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            
             Destroy(gameObject);
         }
     }
@@ -77,6 +78,16 @@ public class Projectile : MonoBehaviour
             isMoving = true;
             print("hej1");
             Throw(true);
+        }
+
+        if (direction && transform.position.x >= throwRangeLeft.x && !isMoving)
+        {
+            Throw(true);
+        }
+        else if (direction)
+        {
+            isMoving = true;
+            Throw(false);
         }
         
     }

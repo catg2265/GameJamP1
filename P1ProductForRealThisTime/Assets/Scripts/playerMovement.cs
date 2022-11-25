@@ -24,7 +24,8 @@ public class playerMovement : MonoBehaviour
    GameObject foundEnemy;
    [SerializeField] private Animator thorAnima;
    public GameObject thorsHammer;
-   private Transform attRay;
+   public GameObject attackThrow;
+   
    
    void Start() 
    {
@@ -85,7 +86,7 @@ public class playerMovement : MonoBehaviour
 
            if (other.gameObject.CompareTag("hammer"))
            {
-               Destroy(thorsHammer);
+               Destroy(thorsHammer.gameObject);
            }
        }
        void FixedUpdate()
@@ -123,7 +124,7 @@ public class playerMovement : MonoBehaviour
 
        void HammerThrow()
        {
-           Instantiate(thorsHammer, attackRay.transform.position, Quaternion.identity);
+           Instantiate(thorsHammer, attackThrow.transform.position, Quaternion.identity);
        }
        void DelayedHammerThrow()
        {
