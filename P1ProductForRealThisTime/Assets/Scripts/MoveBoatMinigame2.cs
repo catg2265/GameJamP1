@@ -19,7 +19,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
 
     public float whalesCaught;
 
-    private bool anchorCanMove = true;
+    public bool anchorCanMove = true;
 
     private void Update()
     {
