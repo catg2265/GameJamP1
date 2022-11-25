@@ -19,6 +19,8 @@ public class MoveBoatMinigame2 : MonoBehaviour
 
     public float whalesCaught;
 
+    private bool anchorCanMove = true;
+
     private void Update()
     {
         if (whalesCaught > 0)
@@ -34,7 +36,20 @@ public class MoveBoatMinigame2 : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(movementX * speedX, rb.velocity.y);
-        anchor.velocity = new Vector2(rb.velocity.x, movementY * speedY);
+        if (anchorCanMove)
+        {
+            anchor.velocity = new Vector2(rb.velocity.x, movementY * speedY);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        anchorCanMove = false;
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        anchorCanMove = true;
     }
 
     void OnMoveAnchor(InputValue input)
