@@ -7,12 +7,15 @@ public class DropLookAt : MonoBehaviour
     [SerializeField] private Vector3 startPosition;
 
     [SerializeField] private Vector3 endPosition;
+
+    [SerializeField] private GameObject player;
     
-    public float speed = 2f;
+    float speed = 2f;
     // Start is called before the first frame update
     void Start()
     {
         transform.position = startPosition;
+        speed = player.GetComponent<MoveAnchorFishingMinigame>().speed;
     }
 
     // Update is called once per frame
