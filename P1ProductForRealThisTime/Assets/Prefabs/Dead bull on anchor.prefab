@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2932199778903489833}
   m_Layer: 0
   m_Name: Dead bull on anchor
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
