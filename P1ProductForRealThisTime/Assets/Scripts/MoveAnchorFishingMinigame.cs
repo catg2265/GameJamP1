@@ -17,8 +17,6 @@ public class MoveAnchorFishingMinigame : MonoBehaviour
     private Vector2 movement;
     private float movementX;
 
-    private bool moveTowards = true;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +26,7 @@ public class MoveAnchorFishingMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moveTowards)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, endPosition, Time.deltaTime * speed);
-        }
+        transform.position = Vector3.MoveTowards(transform.position, endPosition, Time.deltaTime * speed);
     }
 
     private void FixedUpdate()
@@ -43,13 +38,5 @@ public class MoveAnchorFishingMinigame : MonoBehaviour
     {
         movement = movementValue.Get<Vector2>();
         movementX = Mathf.RoundToInt(movement.x);
-        if (movementX > 0 || movementX < 0)
-        {
-            moveTowards = false;
-        }
-        else
-        {
-            moveTowards = true;
-        }
     }
 }
