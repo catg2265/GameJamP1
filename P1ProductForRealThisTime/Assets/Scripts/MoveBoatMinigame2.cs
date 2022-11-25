@@ -15,6 +15,21 @@ public class MoveBoatMinigame2 : MonoBehaviour
     
     [SerializeField] private Rigidbody2D anchor;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator anim;
+
+    public float whalesCaught;
+
+    private void Update()
+    {
+        if (whalesCaught > 0)
+        {
+            anim.SetFloat("whales", whalesCaught);
+        }
+        else if (whalesCaught > 1)
+        {
+            anim.SetFloat("whales", whalesCaught);
+        }
+    }
 
     private void FixedUpdate()
     {
