@@ -52,7 +52,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            anchorTransform.position = anchorStartPos;
+            anchorTransform.position = anchorStartPos+transform.position;
             anchor.bodyType = RigidbodyType2D.Dynamic;
         }
     }
