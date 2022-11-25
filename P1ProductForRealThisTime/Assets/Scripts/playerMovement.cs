@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
@@ -8,12 +9,11 @@ using UnityEngine.Serialization;
 public class playerMovement : MonoBehaviour
 {
    private Rigidbody2D rb;
-   private SpriteRenderer sr;
    private float movementX;
    public float speed = 1;
-   
+
    private bool touchGrass;
-   private bool isFlipped;
+   public bool isFlipped;
    private float jumpY;
    public float jumpHeight = 1;
        
@@ -24,10 +24,11 @@ public class playerMovement : MonoBehaviour
    GameObject foundEnemy;
    [SerializeField] private Animator thorAnima;
    public GameObject thorsHammer;
+   private Transform attRay;
+   
    void Start() 
    {
            rb = GetComponent<Rigidbody2D>();
-           sr = GetComponent<SpriteRenderer>();
    }
 
    void OnMove(InputValue movementValue)
@@ -62,11 +63,13 @@ public class playerMovement : MonoBehaviour
            {
                transform.localScale = new Vector3(-1, 1, 1);
                isFlipped = true;
+               thorsHammer.GetComponent<Projectile>().direction = true;
            }
            else if (movementVector.x > 0)
            {
                transform.localScale = new Vector3(1, 1, 1);
                isFlipped = false;
+               thorsHammer.GetComponent<Projectile>().direction = false;
            }
            
           
@@ -78,6 +81,11 @@ public class playerMovement : MonoBehaviour
            {
                touchGrass = true;
                thorAnima.SetBool("touchGrass", true);
+           }
+
+           if (other.gameObject.CompareTag("hammer"))
+           {
+               Destroy(thorsHammer);
            }
        }
        void FixedUpdate()
@@ -107,20 +115,26 @@ public class playerMovement : MonoBehaviour
                Raycast(Vector2.left);
            }
        }
-
-       void DelayedHammerThrow()
-       {
-           
-       }
        private void OnFire()
        {
-           thorAnima.SetTrigger("meleeAttack");
-           Invoke(nameof(DelayedRaycast), 0.55f);
+               thorAnima.SetTrigger("meleeAttack");
+               Invoke(nameof(DelayedRaycast), 0.55f);
        }
 
+       void HammerThrow()
+       {
+           Instantiate(thorsHammer, attackRay.transform.position, Quaternion.identity);
+       }
+       void DelayedHammerThrow()
+       {
+           HammerThrow();
+           
+       }
+       
        private void OnFireRight()
        {
-           
+           thorAnima.SetTrigger("rangedAttack");
+           Invoke(nameof(DelayedHammerThrow), 0.6f);
        }
 
     }

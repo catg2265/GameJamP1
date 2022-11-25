@@ -55078,7 +55078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7391583846707802597, guid: b39b36a18db5c384fbdef47549a59b4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 7391583846707802597, guid: b39b36a18db5c384fbdef47549a59b4e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55127,6 +55127,10 @@ PrefabInstance:
     - target: {fileID: 7391583846707802600, guid: b39b36a18db5c384fbdef47549a59b4e, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391583846707802600, guid: b39b36a18db5c384fbdef47549a59b4e, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b39b36a18db5c384fbdef47549a59b4e, type: 3}
@@ -55275,12 +55279,28 @@ PrefabInstance:
       objectReference: {fileID: 1208334307}
     - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: thorAnima
       value: 
       objectReference: {fileID: 212518566}
+    - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: jumpHeight
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: thorsHammer
+      value: 
+      objectReference: {fileID: 3871772771566202873, guid: c9a6ffa77bf406041956f3d1d93ff584, type: 3}
+    - target: {fileID: 875880231291930899, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 875880231291930899, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 875880231291930900, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: m_RootOrder
       value: 2
