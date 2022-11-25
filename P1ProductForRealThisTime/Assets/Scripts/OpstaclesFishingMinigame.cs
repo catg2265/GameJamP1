@@ -8,7 +8,7 @@ public class OpstaclesFishingMinigame : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Anchor"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
