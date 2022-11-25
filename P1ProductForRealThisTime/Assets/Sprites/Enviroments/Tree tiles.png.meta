@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 705e3867d7dd62347bc135f0aeff37c7
+guid: 04e91760234ecb6488b575b4eb78b2eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,80 +101,89 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor og 1 Hval_0"
+      name: Tree tiles_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14
+        y: 96
+        width: 55
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b0e669b9910224a94f07d51c871d59
-      internalID: -1180652202
+      spriteID: a7bcad060d751a6499e363f975de0bab
+      internalID: 686631504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor og 1 Hval_1"
+      name: Tree tiles_10
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6b799214ab092341988e6acbd0587bd
-      internalID: -1976883954
+      spriteID: a57739500e901504caa59959482807cd
+      internalID: -523148886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor og 1 Hval_2"
+      name: Tree tiles_11
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4072ede2f1063b44bdc8d5c03d81837
-      internalID: 2015516356
+      spriteID: c7fe5a3bf27dbc84aa1c318adfca0e16
+      internalID: 1665482036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree tiles_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bee19ba869c3cc469dc07c99eb57c37
+      internalID: -1579577038
       vertices: []
       indices: 
       edges: []
@@ -190,9 +199,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "B\xE5d med Hymir og thor og 1 Hval_1": -1976883954
-      "B\xE5d med Hymir og thor og 1 Hval_0": -1180652202
-      "B\xE5d med Hymir og thor og 1 Hval_2": 2015516356
+      Tree tiles_8: 686631504
+      Tree tiles_1: 848629303
+      Tree tiles_0: -107199703
+      Tree tiles_9: 317429882
+      Tree tiles_4: -1480945516
+      Tree tiles_6: 243961601
+      Tree tiles_10: -523148886
+      Tree tiles_13: -1579577038
+      Tree tiles_3: -714898014
+      Tree tiles_14: -1085197764
+      Tree tiles_11: 1665482036
+      Tree tiles_2: 2065809984
+      Tree tiles_12: -1517513278
+      Tree tiles_5: -978212665
+      Tree tiles_7: -1899377832
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

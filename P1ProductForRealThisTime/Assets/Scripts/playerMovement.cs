@@ -21,6 +21,7 @@ public class playerMovement : MonoBehaviour
        public GameObject enemy;
        private GameObject foundEnemy;
        [SerializeField] private Animator thorAnima;
+       public GameObject thorsHammer;
        void Start()
        {
            rb = GetComponent<Rigidbody2D>();
@@ -73,23 +74,25 @@ public class playerMovement : MonoBehaviour
        }
 
 
-       private void OnFire()
+       void DelayedRaycast()
        {
            RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
+           if (hit.collider != null)
+           {
+               string raycastreturn = hit.collider.gameObject.name;
+               foundEnemy = GameObject.Find(raycastreturn);
+               foundEnemy.GetComponent<enemy>().isHit = true;
+           }
+       }
+
+       void DelayedHammerThrow()
+       {
+           
+       }
+       private void OnFire()
+       {
            thorAnima.SetTrigger("meleeAttack");
-               if (hit.collider != null)
-               {
-                   print("you hit");
-                   string raycastreturn = hit.collider.gameObject.name;
-                   foundEnemy = GameObject.Find(raycastreturn);
-                   foundEnemy.GetComponent<enemy>().isHit = true;
-                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.blue);
-               }
-               else
-               {
-                   print("you didnt it");
-                   Debug.DrawRay(attackRay.transform.position, Vector2.right * attackRayRange, Color.red);
-               }
+           Invoke(nameof(DelayedRaycast), 0.55f);
        }
 
        private void OnFireRight()
