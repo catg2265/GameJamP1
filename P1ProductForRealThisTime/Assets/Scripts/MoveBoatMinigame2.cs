@@ -12,14 +12,15 @@ public class MoveBoatMinigame2 : MonoBehaviour
     private float movementX;
     private float movementY;
     private Vector2 movement;
-    
+
+    [SerializeField] private Transform anchorTransform;
     [SerializeField] private Rigidbody2D anchor;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
 
     public float whalesCaught;
 
-    //private bool anchorCanMove = true;
+    public Vector3 anchorStartPos;
 
     private void Update()
     {
@@ -51,6 +52,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
+            anchorTransform.position = anchorStartPos;
             anchor.bodyType = RigidbodyType2D.Dynamic;
         }
     }
