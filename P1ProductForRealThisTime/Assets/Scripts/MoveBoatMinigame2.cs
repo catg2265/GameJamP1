@@ -32,7 +32,13 @@ public class MoveBoatMinigame2 : MonoBehaviour
         {
             anim.SetFloat("whales", whalesCaught);
         }
+
+        if (anchorTransform.position.y < 0)
+        {
+            anchorTransform.position = anchorStartPos+transform.position;
+        }
     }
+    
 
     private void FixedUpdate()
     {
