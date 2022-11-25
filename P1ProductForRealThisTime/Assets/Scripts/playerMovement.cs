@@ -8,26 +8,29 @@ using UnityEngine.Serialization;
 public class playerMovement : MonoBehaviour
 {
    private Rigidbody2D rb;
-       private float movementX;
-       public float speed = 1;
+   private SpriteRenderer sr;
+   private float movementX;
+   public float speed = 1;
    
-       private bool touchGrass;
-       private float jumpY;
-       public float jumpHeight = 1;
+   private bool touchGrass;
+   private bool isFlipped;
+   private float jumpY;
+   public float jumpHeight = 1;
        
-       public GameObject attackRay;
-       [SerializeField] private float attackRayRange;
-       public LayerMask layerMask;
-       public GameObject enemy;
-       private GameObject foundEnemy;
-       [SerializeField] private Animator thorAnima;
-       public GameObject thorsHammer;
-       void Start()
-       {
+   public GameObject attackRay;
+   [SerializeField] private float attackRayRange;
+   public LayerMask layerMask;
+   public GameObject enemy;
+   GameObject foundEnemy;
+   [SerializeField] private Animator thorAnima;
+   public GameObject thorsHammer;
+   void Start() 
+   {
            rb = GetComponent<Rigidbody2D>();
-       }
-   
-       void OnMove(InputValue movementValue)
+           sr = GetComponent<SpriteRenderer>();
+   }
+
+   void OnMove(InputValue movementValue)
        {
            Vector2 movementVector = movementValue.Get<Vector2>();
            movementX = Mathf.RoundToInt((movementVector.x));
@@ -44,8 +47,6 @@ public class playerMovement : MonoBehaviour
                    
                    thorAnima.SetBool("touchGrass", false);
                }
-                   
-                   
            }
 
            if (movementVector.x > 0 || movementVector.x < 0)
@@ -55,6 +56,17 @@ public class playerMovement : MonoBehaviour
            else
            {
                thorAnima.SetBool("Velocity", false);
+           }
+
+           if (movementVector.x < 0)
+           {
+               transform.localScale = new Vector3(-1, 1, 1);
+               isFlipped = true;
+           }
+           else if (movementVector.x > 0)
+           {
+               transform.localScale = new Vector3(1, 1, 1);
+               isFlipped = false;
            }
            
           
@@ -73,15 +85,26 @@ public class playerMovement : MonoBehaviour
            rb.velocity = new Vector2(movementX * speed, rb.velocity.y);
        }
 
-
-       void DelayedRaycast()
+       void Raycast(Vector2 direction)
        {
-           RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, Vector2.right, attackRayRange, layerMask);
+           RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, direction, attackRayRange, layerMask);
            if (hit.collider != null)
            {
                string raycastreturn = hit.collider.gameObject.name;
                foundEnemy = GameObject.Find(raycastreturn);
                foundEnemy.GetComponent<enemy>().isHit = true;
+           } 
+       }
+
+       void DelayedRaycast()
+       {
+           if (!isFlipped)
+           {
+               Raycast(Vector2.right);
+           }
+           else if (isFlipped)
+           {
+               Raycast(Vector2.left);
            }
        }
 

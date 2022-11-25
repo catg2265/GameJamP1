@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0023fcb25f97d6049b8ede2e87324831
+guid: 72522252cadb61149bd9ac72ea12afcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 2
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,8 +69,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,17 +101,53 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_0"
+      name: EvilEyes_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 256
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d2de727d2e0d44fb221eb760b2d280
-      internalID: 511619151
+      spriteID: 1eaea6b43221b034fb6d697e6af1105b
+      internalID: -384000237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_1"
+      name: EvilEyes_1
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
-        width: 256
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e10240fc70186545a84d64979b411a4
-      internalID: -269417772
+      spriteID: 747347080e5c5d1468b5ca204b92c6f1
+      internalID: -883422895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_2"
+      name: EvilEyes_2
       rect:
         serializedVersion: 2
-        x: 512
+        x: 96
         y: 0
-        width: 256
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29e4f13b507d36b42aa6e2f76260ec25
-      internalID: -241365205
+      spriteID: 2d553823c1e72a940949ed3ea2c3ca31
+      internalID: 769701884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_3"
+      name: EvilEyes_3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 128
         y: 0
-        width: 256
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65814f752c6ace4458e84ca52050dd7a
-      internalID: -1459065385
+      spriteID: 564f2682f3a5b514ebd811b061529102
+      internalID: 352238158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_4"
+      name: EvilEyes_4
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 160
         y: 0
-        width: 256
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,29 +239,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ad21789b8b51048ae3f4d1f7a5952a
-      internalID: 835399333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_5"
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca06cce145010334f8b2b7888e6c4e08
-      internalID: 59129587
+      spriteID: fbcc17c5912409e4abdcb8bb0caf9002
+      internalID: 1591312248
       vertices: []
       indices: 
       edges: []
@@ -241,12 +256,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Cutscene1 Thor, \xE6gir og ran_5": 59129587
-      "Cutscene1 Thor, \xE6gir og ran_1": -269417772
-      "Cutscene1 Thor, \xE6gir og ran_4": 835399333
-      "Cutscene1 Thor, \xE6gir og ran_3": -1459065385
-      "Cutscene1 Thor, \xE6gir og ran_0": 511619151
-      "Cutscene1 Thor, \xE6gir og ran_2": -241365205
+      EvilEyes_1: -883422895
+      EvilEyes_3: 352238158
+      EvilEyes_4: 1591312248
+      EvilEyes_2: 769701884
+      EvilEyes_0: -384000237
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

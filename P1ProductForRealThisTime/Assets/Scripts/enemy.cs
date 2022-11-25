@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Collider2D c2D;
+    private SpriteRenderer sr;
     [SerializeField] private GameObject player;
     [SerializeField] private Animator anim;
     public float speed = 1f;
@@ -17,6 +18,7 @@ public class enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         c2D = GetComponent<Collider2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -39,13 +41,14 @@ public class enemy : MonoBehaviour
             {
                 Vector2 left = Vector2.left;
                 rb.velocity = new Vector2(left.x * speed, rb.velocity.y);
+                sr.flipX = false;
 
             }
-        
             else if (player.transform.position.x > transform.position.x)
             {
                 Vector2 right = Vector2.right;
                 rb.velocity = new Vector2(right.x * speed, rb.velocity.y);
+                sr.flipX = true;
             }
         }
     }
