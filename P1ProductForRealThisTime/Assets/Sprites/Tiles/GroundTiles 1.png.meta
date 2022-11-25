@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d12e6d2ede7143d4f9cb54ca04cce0c5
+guid: e191d399a553f464a820ac3836c9a2f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_0
+      name: GroundTiles 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca794057988b1934ea9b7488def92c91
-      internalID: 1385222014
+      spriteID: e968616ec3d77e24392d8e2cbd16764b
+      internalID: -864403786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_1
+      name: GroundTiles 1_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 109e72d8f407e3645a750fe5f83fea20
-      internalID: 1638981244
+      spriteID: 1d549acab12b1614e96f2d4e29e10a61
+      internalID: -970415614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_2
+      name: GroundTiles 1_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
+        x: 640
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11c343b9dbb3d4647b41fa5447786baf
-      internalID: -2014115297
+      spriteID: 2229eeacca2c1864096d105bec862c33
+      internalID: -1234010888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_3
+      name: GroundTiles 1_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
+        x: 704
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dee98406aa8977d47a9ad2d9dbab6b65
-      internalID: 432980957
+      spriteID: f00876e0a2703a54eadc746ff49d3ac2
+      internalID: -972314384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_4
+      name: GroundTiles 1_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 532eb3c7751da1f488030b14f446727a
-      internalID: -1237542879
+      spriteID: b3847e5c8b101984d8e5e48e545ee8e7
+      internalID: 536745819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_5
+      name: GroundTiles 1_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 256
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9933eafd3511224cb5bd20e675d4024
-      internalID: 2090185720
+      spriteID: e66df97d9dcfcdd47abf4d22655c2a11
+      internalID: 828497282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_6
+      name: GroundTiles 1_10
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 256
-        height: 256
+        x: 640
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed101e7d7bd5dca4d8b6e5186cf86a40
-      internalID: 661206966
+      spriteID: e790c2b53b597dc4d9b865a392fa402a
+      internalID: 1200511861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_7
+      name: GroundTiles 1_11
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 0
-        width: 256
-        height: 256
+        x: 704
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c65990d66e2a034ab99502c8c02974c
-      internalID: -1028485791
+      spriteID: 77e45bccddba46243953a649fc378988
+      internalID: 1504700198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_8
+      name: GroundTiles 1_16
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 256
-        height: 256
+        x: 320
+        y: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,71 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7715bdfd529645542bfebee7c00a4e71
-      internalID: 1534245144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_9
-      rect:
-        serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9478233f2d6177f42acb53839661f23c
-      internalID: 2005792556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_10
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab8b834101d8d63449e3738929e53639
-      internalID: 2138420740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscene3 hymir ud i vand_11
-      rect:
-        serializedVersion: 2
-        x: 2816
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d1c6264606e62741a3416fde6366e94
-      internalID: -786762133
+      spriteID: 08e79fb88056c734086dd8b2fc537c94
+      internalID: 1094552455
       vertices: []
       indices: 
       edges: []
@@ -367,18 +304,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cutscene3 hymir ud i vand_1: 1638981244
-      Cutscene3 hymir ud i vand_0: 1385222014
-      Cutscene3 hymir ud i vand_3: 432980957
-      Cutscene3 hymir ud i vand_7: -1028485791
-      Cutscene3 hymir ud i vand_9: 2005792556
-      Cutscene3 hymir ud i vand_5: 2090185720
-      Cutscene3 hymir ud i vand_6: 661206966
-      Cutscene3 hymir ud i vand_2: -2014115297
-      Cutscene3 hymir ud i vand_10: 2138420740
-      Cutscene3 hymir ud i vand_4: -1237542879
-      Cutscene3 hymir ud i vand_8: 1534245144
-      Cutscene3 hymir ud i vand_11: -786762133
+      GroundTiles 1_8: -628758624
+      GroundTiles 1_9: -1292566584
+      GroundTiles 1_1: -970415614
+      GroundTiles 1_18: 1994174025
+      GroundTiles 1_3: -972314384
+      GroundTiles 1_5: 828497282
+      GroundTiles 1_13: 929547590
+      GroundTiles 1_7: 1977949304
+      GroundTiles 1_10: 1200511861
+      GroundTiles 1_20: 1937434945
+      GroundTiles 1_14: -1675120576
+      GroundTiles 1_15: 761879017
+      GroundTiles 1_19: -2034784471
+      GroundTiles 1_12: -1494988192
+      GroundTiles 1_2: -1234010888
+      GroundTiles 1_17: -5370497
+      GroundTiles 1_0: -864403786
+      GroundTiles 1_4: 536745819
+      GroundTiles 1_6: 1241698756
+      GroundTiles 1_11: 1504700198
+      GroundTiles 1_21: 2011953144
+      GroundTiles 1_16: 1094552455
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

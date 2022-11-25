@@ -12,10 +12,18 @@ public class ObstaclePatrol : MonoBehaviour
 
     private bool _istransformNotNull;
 
+    public bool canFlip = true;
+
     // Start is called before the first frame update
     void Start()
     {
         _istransformNotNull = transform != null;
+        if (canFlip)
+        {
+            Vector3 localscale = transform.localScale;
+            localscale.x *= -1f;
+            transform.localScale = localscale;
+        }
     }
 
     // Update is called once per frame
@@ -31,15 +39,20 @@ public class ObstaclePatrol : MonoBehaviour
                 if (increment == positions.Length - 1)
                 {
                     increment = 0;
-                    localscale.x *= -1f;
-                    transform.localScale = localscale;
+                    if (canFlip)
+                    {
+                        localscale.x *= -1f;
+                        transform.localScale = localscale;
+                    }
                 }
-
                 else
                 {
                     increment++;
-                    localscale.x *= -1f;
-                    transform.localScale = localscale;
+                    if (canFlip)
+                    {
+                        localscale.x *= -1f;
+                        transform.localScale = localscale;
+                    }
                 }
             }
         }
