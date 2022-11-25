@@ -37,6 +37,11 @@ public class MoveBoatMinigame2 : MonoBehaviour
         {
             anchorTransform.position = anchorStartPos+transform.position;
         }
+
+        if (anchorTransform.position.y > 6)
+        {
+            anchorTransform.position = anchorStartPos+transform.position;
+        }
     }
     
 
