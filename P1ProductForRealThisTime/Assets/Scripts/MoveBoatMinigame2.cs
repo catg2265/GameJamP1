@@ -44,12 +44,18 @@ public class MoveBoatMinigame2 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        anchorCanMove = false;
+        if (col.gameObject.CompareTag("Wall"))
+        {
+            anchorCanMove = false;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        anchorCanMove = true;
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            anchorCanMove = true;
+        }
     }
 
     void OnMoveAnchor(InputValue input)
