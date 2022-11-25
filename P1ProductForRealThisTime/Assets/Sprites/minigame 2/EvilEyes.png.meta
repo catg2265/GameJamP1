@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0132f0b2af3ccf438f4fd1b1d8b6faf
+guid: 72522252cadb61149bd9ac72ea12afcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 4
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +102,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_0"
+      name: EvilEyes_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +155,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 631908f5bba757b4ca263701e4e67237
-      internalID: -1209158073
+      spriteID: 1eaea6b43221b034fb6d697e6af1105b
+      internalID: -384000237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_1"
+      name: EvilEyes_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747347080e5c5d1468b5ca204b92c6f1
+      internalID: -883422895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d553823c1e72a940949ed3ea2c3ca31
+      internalID: 769701884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564f2682f3a5b514ebd811b061529102
+      internalID: 352238158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
-        width: 128
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +239,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57acfee517b448b4d8becf42f6b33abb
-      internalID: -1862750522
+      spriteID: fbcc17c5912409e4abdcb8bb0caf9002
+      internalID: 1591312248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_2"
+      name: EvilEyes_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecdc5146237710478a3cbf27e7d716c
+      internalID: 1914724424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e048f772bcbf5a4f8df4b99e88f179d
+      internalID: -1496525963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5d155f5fc560a48b13a151769d7c94
+      internalID: 1269439030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilEyes_8
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 128
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81b13bce5ea56324cb0aa866640d20c7
-      internalID: 1277510535
+      spriteID: f561e289bfe40f94db43a3976fcfea0f
+      internalID: -1729051193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_3"
+      name: EvilEyes_9
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 0
-        width: 128
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02ed37bdc730ee47befdf43645a2007
-      internalID: 1764051275
+      spriteID: b751adfcd2b2013418357a9856071ca5
+      internalID: 2143501578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_4"
+      name: EvilEyes_10
       rect:
         serializedVersion: 2
-        x: 512
+        x: 320
         y: 0
-        width: 128
-        height: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,92 +365,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e2147ca6bc87574fbe3c893dd00d3c7
-      internalID: 1662253763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_5"
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16641615d13500940b83d4974c536f60
-      internalID: 775435716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_6"
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32bd45a602f62e2439772474509f276e
-      internalID: 660378893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_7"
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0676fadaf2ffdc4791e886331591305
-      internalID: 1718114877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\xE5d med Hymir og thor fjerner Padel og smider anker_8"
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 011a0ad4559b03e4a89b0493f08fe4b4
-      internalID: 1867708864
+      spriteID: 6bac0010ca1bff048a2095bfeb824638
+      internalID: 1061693796
       vertices: []
       indices: 
       edges: []
@@ -316,15 +382,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_6": 660378893
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_8": 1867708864
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_2": 1277510535
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_7": 1718114877
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_1": -1862750522
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_5": 775435716
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_3": 1764051275
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_0": -1209158073
-      "B\xE5d med Hymir og thor fjerner Padel og smider anker_4": 1662253763
+      EvilEyes_1: -883422895
+      EvilEyes_6: -1496525963
+      EvilEyes_8: -1729051193
+      EvilEyes_10: 1061693796
+      EvilEyes_3: 352238158
+      EvilEyes_4: 1591312248
+      EvilEyes_7: 1269439030
+      EvilEyes_2: 769701884
+      EvilEyes_0: -384000237
+      EvilEyes_5: 1914724424
+      EvilEyes_9: 2143501578
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

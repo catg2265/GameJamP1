@@ -830,9 +830,42 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "left",
+                    "id": "598ec9ba-4045-471d-ba0a-43ab92853589",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "MoveAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "down",
-                    "id": "008a4136-aa52-4987-825c-0902221a46c3",
+                    "id": "89c7ef7b-2999-4d89-86ab-66bd099d0aca",
                     "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "MoveAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "54420dcd-abc2-4326-9944-65a5286050ca",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "MoveAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "6653cf76-cc21-43e2-a6ac-49ab7be5bd65",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -843,7 +876,18 @@
                 {
                     "name": "left",
                     "id": "81248e5f-2b69-4b2b-9c87-43a5e650f1eb",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "MoveAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "4b36cb19-524a-4ae7-a148-d90c23efa8ac",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -853,8 +897,8 @@
                 },
                 {
                     "name": "right",
-                    "id": "3362cc53-e6a1-4483-ac47-186870b2eb8f",
-                    "path": "<Keyboard>/d",
+                    "id": "78158eab-e523-4023-9976-ecb35db335fb",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
