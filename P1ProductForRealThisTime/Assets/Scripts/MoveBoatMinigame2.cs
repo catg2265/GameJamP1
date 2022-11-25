@@ -19,7 +19,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
 
     public float whalesCaught;
 
-    public bool anchorCanMove = true;
+    //private bool anchorCanMove = true;
 
     private void Update()
     {
@@ -36,17 +36,14 @@ public class MoveBoatMinigame2 : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(movementX * speedX, rb.velocity.y);
-        if (anchorCanMove)
-        {
-            anchor.velocity = new Vector2(rb.velocity.x, movementY * speedY);
-        }
+        anchor.velocity = new Vector2(rb.velocity.x, movementY * speedY);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Wall"))
         {
-            anchorCanMove = false;
+            anchor.bodyType = RigidbodyType2D.Static;
         }
     }
 
@@ -54,7 +51,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            anchorCanMove = true;
+            anchor.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 
