@@ -2452,6 +2452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "B\xE5dDerSejler"
       objectReference: {fileID: 0}
+    - target: {fileID: 5334452114525854953, guid: 7cfd3fd5fa9f2e847b825794f02c1808, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfd3fd5fa9f2e847b825794f02c1808, type: 3}
 --- !u!1 &1914703811

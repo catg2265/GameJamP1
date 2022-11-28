@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 39e96729af955ba478807ad734b84393
+  - enabled: 1
+    path: Assets/Scenes/Minigame 2.unity
+    guid: ecdb778740e5d8740870d6cb4e20eca6
+  - enabled: 1
+    path: Assets/Scenes/Cutscene1.unity
+    guid: f52814fc28b99134ea48ea6c55a09acd
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 0f624772164df9842aff392e36eb60d1
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3.unity
+    guid: c55bd6d2b697e53408ac33252eea7535
+  - enabled: 1
+    path: Assets/Scenes/Minigame 3.unity
+    guid: bfbde525acdb62740ac66b935f5b5327
+  - enabled: 1
+    path: Assets/Scenes/Cutscene4.unity
+    guid: 1119fd17420824643a274ea1778cd4a1
   m_configObjects: {}

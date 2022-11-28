@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0023fcb25f97d6049b8ede2e87324831
+guid: ec47a128e5ed8bf4f8dee08f59312e07
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,8 +69,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_0"
+      name: Cutscene5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 128
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d2de727d2e0d44fb221eb760b2d280
-      internalID: 511619151
+      spriteID: 46974a05ac822964aa76da7f083d2e6c
+      internalID: -1930306692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_1"
+      name: Cutscene5_1
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 256
-        height: 128
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e10240fc70186545a84d64979b411a4
-      internalID: -269417772
+      spriteID: a90586cb183ff424483486d9ef9e4188
+      internalID: 2133776617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_2"
+      name: Cutscene5_2
       rect:
         serializedVersion: 2
         x: 512
         y: 0
         width: 256
-        height: 128
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,71 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29e4f13b507d36b42aa6e2f76260ec25
-      internalID: -241365205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_3"
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65814f752c6ace4458e84ca52050dd7a
-      internalID: -1459065385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_4"
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79ad21789b8b51048ae3f4d1f7a5952a
-      internalID: 835399333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Cutscene1 Thor, \xE6gir og ran_5"
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca06cce145010334f8b2b7888e6c4e08
-      internalID: 59129587
+      spriteID: 1f18267f7e8486a4ab6333b7d7040dd5
+      internalID: 1064582517
       vertices: []
       indices: 
       edges: []
@@ -241,12 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Cutscene1 Thor, \xE6gir og ran_5": 59129587
-      "Cutscene1 Thor, \xE6gir og ran_1": -269417772
-      "Cutscene1 Thor, \xE6gir og ran_4": 835399333
-      "Cutscene1 Thor, \xE6gir og ran_3": -1459065385
-      "Cutscene1 Thor, \xE6gir og ran_0": 511619151
-      "Cutscene1 Thor, \xE6gir og ran_2": -241365205
+      Cutscene5_0: -1930306692
+      Cutscene5_1: 2133776617
+      Cutscene5_2: 1064582517
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
