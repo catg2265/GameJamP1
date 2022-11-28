@@ -25,14 +25,12 @@ public class enemy : MonoBehaviour
     {
         if (isHit)
         {
-            
+            print("whyyyy");
             anim.SetBool("IsDead", true);
             rb.bodyType = RigidbodyType2D.Static;
             c2D.enabled = false;
         }
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (!isHit)

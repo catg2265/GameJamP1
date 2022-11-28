@@ -9,86 +9,88 @@ using Vector3 = UnityEngine.Vector3;
 
 public class Projectile : MonoBehaviour
 {
+    private Stopwatch stopwatch;
     public GameObject player;
-    public float rotationSpeed = 5;
-    public float range = 5;
-
-    public bool direction;
-    private bool isMoving = false;
+    
     private Vector3 startPos;
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Player"))
-        {
-            
-            Destroy(gameObject);
-        }
-    }
-
+    private Vector3 endPos;
+    private Vector3 throwRangeRight;
+    private Vector3 throwRangeLeft;
+    
+    public float rotationSpeed = 10f;
+    public float range = 1f;
+    private float throwTime = 0.5f;
+    
+    public bool direction;
+    private bool maxDistReached = false;
+    
+    
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         startPos = transform.position;
-    }
-
-    Vector3 computeNextPos(Vector3 pos, bool goRight)
-    {
-        Vector3 addVector = Vector3.right / 5;
-        Vector3 minusVector = Vector3.left/ 5;
-
-        if (!goRight)
-        {
-            return pos + addVector;
-        }
-        else
-        {
-            return pos + minusVector;
-        }
-    }
-
-    void Throw(bool direction)
-    {
-        print("");
-        transform.position = computeNextPos(transform.position, direction);
-    }
-    
-    /*void Throw()
-    {
+        throwRangeLeft = new Vector3(transform.position.x - range, transform.position.y);
+        throwRangeRight = new Vector3(transform.position.x + range, transform.position.y);
         stopwatch = new Stopwatch();
-        stopwatch.Start();
-        Vector3 throwRange = new Vector3(10, 0, 0);
-        float timeToMaxDist = 2;
-        rb.velocity = Vector3.Lerp(transform.position, transform.position + throwRange, (stopwatch.ElapsedMilliseconds / 1000f) / timeToMaxDist);
-    }*/
-
+    }
     private void FixedUpdate()
     {
         transform.Rotate(Vector3.back * rotationSpeed, Space.Self);
+        
+        stopwatch.Start();
 
-        Vector3 throwRangeRight = Vector3.right * range;
-        Vector3 throwRangeLeft = Vector3.left * range;
-        
-        
-        if (!direction && transform.position.x <= throwRangeRight.x && !isMoving)
+        float throwTimeRatio = (stopwatch.ElapsedMilliseconds / 1000f) / throwTime;
+
+        if (!maxDistReached && !direction)
         {
-            print("Hej");
-            Throw(false);
+            transform.position = Vector3.Lerp(startPos, throwRangeRight, throwTimeRatio);
         }
-        else if (!direction)
+        else if (maxDistReached && !direction)
         {
-            isMoving = true;
-            print("hej1");
-            Throw(true);
+            transform.position = Vector3.Lerp(endPos, player.transform.position, throwTimeRatio);
+        }
+        
+        if (!maxDistReached && direction)
+        {
+            transform.position =
+                Vector3.Lerp(startPos, throwRangeLeft, throwTimeRatio);
+        }
+        else if (maxDistReached && direction)
+        {
+            transform.position = Vector3.Lerp(endPos, player.transform.position, throwTimeRatio);
         }
 
-        if (direction && transform.position.x >= throwRangeLeft.x && !isMoving)
+        if (transform.position == throwRangeRight)
         {
-            Throw(true);
+            MaxDistReached();
         }
-        else if (direction)
+        else if (transform.position == throwRangeLeft)
         {
-            isMoving = true;
-            Throw(false);
+            MaxDistReached();
         }
-        
     }
+    private void MaxDistReached()
+    {
+        maxDistReached = true;
+        endPos = transform.position;
+        stopwatch = Stopwatch.StartNew();
+    } 
+    private void OnTriggerEnter2D(Collider2D col)
+         {
+             if (col.gameObject.CompareTag("Player") && maxDistReached)
+             {
+                 col.GetComponent<playerMovement>().hammerThrown = false;
+                 Destroy(gameObject);
+             }
+     
+             if (col.gameObject.CompareTag("Enemy"))
+             {
+                 col.GetComponent<enemy>().isHit = true;
+             }
+
+             if (col.gameObject.CompareTag("Ground"))
+             {
+                 maxDistReached = true;
+             }
+         }
 }

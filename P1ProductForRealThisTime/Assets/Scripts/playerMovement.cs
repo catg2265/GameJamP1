@@ -25,11 +25,13 @@ public class playerMovement : MonoBehaviour
    [SerializeField] private Animator thorAnima;
    public GameObject thorsHammer;
    public GameObject attackThrow;
+   public bool hammerThrown = false;
    
    
    void Start() 
    {
            rb = GetComponent<Rigidbody2D>();
+           thorsHammer.GetComponent<Projectile>().direction = false;
    }
 
    void OnMove(InputValue movementValue)
@@ -72,8 +74,6 @@ public class playerMovement : MonoBehaviour
                isFlipped = false;
                thorsHammer.GetComponent<Projectile>().direction = false;
            }
-           
-          
        }
    
        void OnCollisionEnter2D(Collision2D other)
@@ -83,11 +83,7 @@ public class playerMovement : MonoBehaviour
                touchGrass = true;
                thorAnima.SetBool("touchGrass", true);
            }
-
-           if (other.gameObject.CompareTag("hammer"))
-           {
-               Destroy(thorsHammer.gameObject);
-           }
+           
        }
        void FixedUpdate()
        {
@@ -124,18 +120,17 @@ public class playerMovement : MonoBehaviour
 
        void HammerThrow()
        {
-           Instantiate(thorsHammer, attackThrow.transform.position, Quaternion.identity);
+           GameObject hammer = Instantiate(thorsHammer, attackThrow.transform.position, Quaternion.identity);
        }
-       void DelayedHammerThrow()
-       {
-           HammerThrow();
-           
-       }
-       
+
        private void OnFireRight()
        {
-           thorAnima.SetTrigger("rangedAttack");
-           Invoke(nameof(DelayedHammerThrow), 0.6f);
+           if (!hammerThrown)
+           {
+               thorAnima.SetTrigger("rangedAttack");
+               Invoke(nameof(HammerThrow), 0.6f);
+               hammerThrown = true;
+           }
        }
 
     }

@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  isFlipped: 0
   jumpHeight: 15
   attackRay: {fileID: 875880232263480032}
   attackRayRange: 3
@@ -112,6 +113,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   thorAnima: {fileID: 0}
   thorsHammer: {fileID: 0}
+  attackThrow: {fileID: 0}
 --- !u!50 &875880231291930901
 Rigidbody2D:
   serializedVersion: 4
