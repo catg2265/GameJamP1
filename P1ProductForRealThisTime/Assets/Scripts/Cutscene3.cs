@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Cutscene2 : MonoBehaviour
+public class Cutscene3 : MonoBehaviour
 {
     public int changer = 1;
     public Animator Sceneanimator;
@@ -21,9 +21,9 @@ public class Cutscene2 : MonoBehaviour
             Sceneanimator.SetInteger("Cutscenechange", changer++);
             
         }
-        if (Input.GetButton("Jump")&& changer == 5)
+        if (Input.GetButton("Jump")&& changer == 2)
         {
-            SceneManager.LoadScene("Cutscene3");
+            SceneManager.LoadScene("Minigame 2");
         }
     }
 }
