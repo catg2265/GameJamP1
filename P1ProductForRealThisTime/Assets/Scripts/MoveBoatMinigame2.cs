@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class MoveBoatMinigame2 : MonoBehaviour
 {
@@ -56,6 +57,12 @@ public class MoveBoatMinigame2 : MonoBehaviour
         if (col.gameObject.CompareTag("Wall"))
         {
             anchor.bodyType = RigidbodyType2D.Static;
+        }
+        
+        if (col.gameObject.CompareTag("Wall") && whalesCaught == 2)
+        {
+            anchor.bodyType = RigidbodyType2D.Static;
+            SceneManager.LoadScene("Minigame 3");
         }
     }
 
