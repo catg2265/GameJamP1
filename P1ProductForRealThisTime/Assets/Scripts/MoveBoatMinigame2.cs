@@ -62,7 +62,7 @@ public class MoveBoatMinigame2 : MonoBehaviour
         if (col.gameObject.CompareTag("Wall") && whalesCaught == 2)
         {
             anchor.bodyType = RigidbodyType2D.Static;
-            SceneManager.LoadScene("Minigame 3");
+            SceneManager.LoadScene("Cutscene4");
         }
     }
 
