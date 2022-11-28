@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscene3.unity
     guid: c55bd6d2b697e53408ac33252eea7535
+  - enabled: 1
+    path: Assets/Scenes/Minigame 3.unity
+    guid: bfbde525acdb62740ac66b935f5b5327
   m_configObjects: {}
