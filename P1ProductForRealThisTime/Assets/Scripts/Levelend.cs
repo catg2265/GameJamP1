@@ -19,7 +19,6 @@ public class Levelend : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene("StartScene");
-        Debug.Log("Loading Scene");
+        SceneManager.LoadScene("Cutscene2");
     }
 }
