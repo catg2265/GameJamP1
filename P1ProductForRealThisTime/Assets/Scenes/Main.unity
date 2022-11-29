@@ -7586,6 +7586,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1068327904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3601933987569313306, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+  m_PrefabInstance: {fileID: 1370876735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1370876735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7609,6 +7614,14 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: attackThrow
+      value: 
+      objectReference: {fileID: 1068327904}
+    - target: {fileID: 875880231291930897, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
+      propertyPath: thorsHammer
+      value: 
+      objectReference: {fileID: 3871772771566202873, guid: c9a6ffa77bf406041956f3d1d93ff584, type: 3}
     - target: {fileID: 875880231291930900, guid: 62d02978c8bc08a49b44cd2b7880e51f, type: 3}
       propertyPath: m_RootOrder
       value: 2
