@@ -158,8 +158,8 @@ Camera:
   m_GameObject: {fileID: 36752851}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -678,8 +678,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1122783243}
-  - component: {fileID: 1122783245}
   - component: {fileID: 1122783244}
+  - component: {fileID: 1122783246}
+  - component: {fileID: 1122783247}
   m_Layer: 0
   m_Name: Cutscene6
   m_TagString: Untagged
@@ -695,8 +696,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122783242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38938, y: -3.06, z: 0.7352227}
-  m_LocalScale: {x: 3.8941417, y: 3.8941417, z: 3.8941417}
+  m_LocalPosition: {x: -0.38938, y: -2.67, z: 0.7352227}
+  m_LocalScale: {x: 5.959205, y: 5.959205, z: 5.959205}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -754,7 +755,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1122783245
+--- !u!114 &1122783246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122783242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 376131636f08b8a409bfe68ff7ab706d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waves: {fileID: 760109210}
+  background: {fileID: 565246277}
+  m_Animator: {fileID: 1122783247}
+  m_Camera: {fileID: 36752853}
+--- !u!95 &1122783247
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -764,7 +781,7 @@ Animator:
   m_GameObject: {fileID: 1122783242}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 368931b1c2018804fa1c881ebe6e15a5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1d610623b7242a6448cd0656d144be14, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
