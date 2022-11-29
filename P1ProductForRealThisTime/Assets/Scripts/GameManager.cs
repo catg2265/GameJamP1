@@ -15,5 +15,10 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void startcutscene1()
+    {
+        SceneManager.LoadScene("Cutscene1");
+    }
     #endregion
 }

@@ -1053,7 +1053,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 243377110}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartMain
+        m_MethodName: startcutscene1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
