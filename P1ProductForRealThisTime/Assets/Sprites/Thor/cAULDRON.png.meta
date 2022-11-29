@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec47a128e5ed8bf4f8dee08f59312e07
+guid: e566282fbfef4e8468aa10022cecd9f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutscene5_0
+      name: cAULDRON_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 120
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19d8be157270ea4e9b13e7e56e088c2
+      internalID: 293955908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cAULDRON_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 64
+        width: 120
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d384c7a675467924bb7438d6f00ae894
+      internalID: 2015167462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cAULDRON_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 288
-        height: 128
+        width: 120
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46974a05ac822964aa76da7f083d2e6c
-      internalID: -1930306692
+      spriteID: c691f816006d1c9459abd02b34252090
+      internalID: -963679546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cutscene5_1
+      name: cAULDRON_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 120
         y: 0
-        width: 288
-        height: 128
+        width: 120
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,29 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a90586cb183ff424483486d9ef9e4188
-      internalID: 2133776617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cutscene5_2
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 288
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f18267f7e8486a4ab6333b7d7040dd5
-      internalID: 1064582517
+      spriteID: 39e1502168385604ab0698c6c5862294
+      internalID: 994436615
       vertices: []
       indices: 
       edges: []
@@ -178,9 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cutscene5_0: -1930306692
-      Cutscene5_1: 2133776617
-      Cutscene5_2: 1064582517
+      cAULDRON_3: 994436615
+      cAULDRON_0: 293955908
+      cAULDRON_2: -963679546
+      cAULDRON_1: 2015167462
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
