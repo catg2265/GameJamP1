@@ -4459,6 +4459,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3318609990598734108, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318609990598734108, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cd59ab65a67a90b47a361f1e6fb40a1d, type: 3}
     - target: {fileID: 4851513473535480513, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
       propertyPath: Minigame
       value: 
