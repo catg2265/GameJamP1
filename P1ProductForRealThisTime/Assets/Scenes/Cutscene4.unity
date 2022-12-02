@@ -154,7 +154,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707025240}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -181,8 +181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Om nom nom. I gotta say Hymir these bulls you have are delicious. I am
-    here to borrow you big cauldron, can i have it?
+  m_text: 'Thor: Back to shore? HA, we are so close to jormungand and i am sure i
+    can kill it this time!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -374,7 +374,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1707025240}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -401,9 +401,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hymir: hmm maybe, ill let you borrow it, but you ate all food. That was
-    my breakfast, lunch and dinner. If you want to borrow my cauldron you will have
-    to go with me to catch food!'
+  m_text: 'Hymir: Ahh finaly we have chaught the whales, now we can go back, and
+    you can have the cauldron. My arms are too tiered can you row us back to shore?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -601,6 +600,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changer: 1
   Sceneanimator: {fileID: 733066877}
+  Textchange: 0
+  Hymir: {fileID: 471983394}
+  Thor: {fileID: 10010741}
+  Hymir2: {fileID: 1891246202}
+  Thor2: {fileID: 1857289842}
 --- !u!82 &733066880
 AudioSource:
   m_ObjectHideFlags: 0
@@ -789,8 +793,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 10010740}
   - {fileID: 471983393}
+  - {fileID: 10010740}
   - {fileID: 1891246201}
   - {fileID: 1857289841}
   m_Father: {fileID: 0}
@@ -859,8 +863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thor: Wonderful! if i liked those bulls surely whales will enjoy them
-    too'
+  m_text: 'Thor: No'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -995,10 +998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hymir: I think i could go for some whales, ill go prep the boat. You go
-    find some bait for the whales!
-
-    *grumble* *grumble* Stupid Thor *grumble*'
+  m_text: 'Hymir: WHAAAAT you truly are stupid go back now!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
