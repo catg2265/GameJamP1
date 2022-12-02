@@ -326,8 +326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c582bc9568ad444863cab1fcce7e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changer: 1
-  Sceneanimator: {fileID: 2027702710}
 --- !u!82 &2027702713
 AudioSource:
   m_ObjectHideFlags: 0
@@ -340,7 +338,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e9522f38b241f2942a3d16a42db9d29e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
