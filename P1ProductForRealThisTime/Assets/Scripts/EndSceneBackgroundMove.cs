@@ -20,7 +20,7 @@ public class EndSceneBackgroundMove : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + move * (speed * Time.fixedTime));
-        if (transform.position.x >= endPos.x)
+        if (transform.position.x <= endPos.x)
         {
             transform.position = startPos;
         }
