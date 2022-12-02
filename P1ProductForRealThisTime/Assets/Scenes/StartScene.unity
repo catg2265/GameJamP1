@@ -336,6 +336,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3318609990598734108, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318609990598734108, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e9522f38b241f2942a3d16a42db9d29e, type: 3}
+    - target: {fileID: 4851513473535480513, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+      propertyPath: UseGameObjects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6325287106736155915, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -387,7 +399,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4851513473535480513, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
   m_PrefabInstance: {fileID: 243377109}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 869231034}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba2213b75febc09458b19e509fca9a11, type: 3}
@@ -477,6 +489,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &869231034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 244160106204889924, guid: 70041b29107025c43b1a41d2e25652f5, type: 3}
+  m_PrefabInstance: {fileID: 243377109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!169 &869231035
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869231034}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.008640291
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &961596897
 GameObject:
   m_ObjectHideFlags: 0

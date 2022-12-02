@@ -28,12 +28,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject ControlScreen;
     [SerializeField] private GameObject Minigame;
     [SerializeField] private GameObject Backgrounds;
+
+    public bool UseGameObjects = true;
     
     private void Start()
     {
-        Minigame.SetActive(false);
-        Backgrounds.SetActive(false);
-        ControlScreen.SetActive(true);
+        if (UseGameObjects)
+        {
+            Minigame.SetActive(false);
+            Backgrounds.SetActive(false);
+            ControlScreen.SetActive(true);
+        }
+        else
+        {
+            ControlScreen = null;
+            Minigame = null;
+            Backgrounds = null;
+        }
     }
 
     public void StartMinigame()

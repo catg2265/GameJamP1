@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Cutscene3 : MonoBehaviour
 {
-    public int changer = 1;
-    public Animator Sceneanimator;
+   /* public int changer = 1;
+    public Animator Sceneanimator;*/
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        
+        yield return new WaitForSeconds(5); 
+        SceneManager.LoadScene("Minigame 2");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        /*if (Input.GetButtonDown("Jump"))
         {
             Sceneanimator.SetInteger("Cutscenechange", changer++);
             
@@ -24,6 +25,6 @@ public class Cutscene3 : MonoBehaviour
         if (Input.GetButton("Jump")&& changer == 2)
         {
             SceneManager.LoadScene("Minigame 2");
-        }
+        }*/
     }
 }
