@@ -6,6 +6,7 @@ public class Anicontrol : MonoBehaviour
 {
     [SerializeField] private GameObject Waves;
     [SerializeField] private GameObject background;
+    [SerializeField] private GameObject background2;
     [SerializeField] private Animator m_Animator;
     [SerializeField] private Camera m_Camera;
     //private Vector3 pos = new Vector3(-0.38938f, 2f, 0); 
@@ -15,9 +16,11 @@ public class Anicontrol : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        background2.SetActive(false);
         yield return new WaitForSeconds(3f);
         Waves.SetActive(false);
         background.SetActive(false);
+        background2.SetActive(true);
         m_Animator.SetTrigger("Scenechange");
         m_Camera.orthographicSize = 5;
         transform.position = Vector3.zero;
