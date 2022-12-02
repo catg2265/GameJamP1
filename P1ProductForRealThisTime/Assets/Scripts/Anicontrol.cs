@@ -17,7 +17,7 @@ public class Anicontrol : MonoBehaviour
     IEnumerator Start()
     {
         background2.SetActive(false);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(6f);
         Waves.SetActive(false);
         background.SetActive(false);
         background2.SetActive(true);
