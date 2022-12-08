@@ -20,7 +20,7 @@ public class enemy : MonoBehaviour
         c2D = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
     }
-
+    
     private void Update()
     {
         if (isHit)

@@ -14,7 +14,7 @@ public class playerMovement : MonoBehaviour
 
    private bool touchGrass;
    public bool isFlipped;
-   private float jumpY;
+   private float movementY;
    public float jumpHeight = 1;
        
    public GameObject attackRay;
@@ -30,76 +30,76 @@ public class playerMovement : MonoBehaviour
    
    void Start() 
    {
-           rb = GetComponent<Rigidbody2D>();
-           thorsHammer.GetComponent<Projectile>().direction = false;
+       rb = GetComponent<Rigidbody2D>();
+       thorsHammer.GetComponent<Projectile>().direction = false;
    }
 
    void OnMove(InputValue movementValue)
+   {
+       Vector2 movementVector = movementValue.Get<Vector2>();
+       movementX = Mathf.RoundToInt((movementVector.x));
+   
+       Vector2 jumpVector = movementValue.Get<Vector2>();
+       movementY = Mathf.RoundToInt((jumpVector.y));
+   
+       if (jumpVector.y > 0)
        {
-           Vector2 movementVector = movementValue.Get<Vector2>();
-           movementX = Mathf.RoundToInt((movementVector.x));
-   
-           Vector2 jumpVector = movementValue.Get<Vector2>();
-           jumpY = Mathf.RoundToInt((jumpVector.y));
-   
-           if (jumpVector.y > 0)
+           if (touchGrass)
            {
-               if (touchGrass)
-               {
-                   touchGrass = false;
-                   rb.velocity = new Vector2(jumpVector.x, jumpY * jumpHeight);
+               touchGrass = false;
+               rb.velocity = new Vector2(jumpVector.x, movementY * jumpHeight);
                    
-                   thorAnima.SetBool("touchGrass", false);
-               }
-           }
-
-           if (movementVector.x > 0 || movementVector.x < 0)
-           {
-               thorAnima.SetBool("Velocity", true);
-           }
-           else
-           {
-               thorAnima.SetBool("Velocity", false);
-           }
-
-           if (movementVector.x < 0)
-           {
-               transform.localScale = new Vector3(-1, 1, 1);
-               isFlipped = true;
-               thorsHammer.GetComponent<Projectile>().direction = true;
-           }
-           else if (movementVector.x > 0)
-           {
-               transform.localScale = new Vector3(1, 1, 1);
-               isFlipped = false;
-               thorsHammer.GetComponent<Projectile>().direction = false;
+               thorAnima.SetBool("touchGrass", false);
            }
        }
-   
-       void OnCollisionEnter2D(Collision2D other)
+
+       if (movementVector.x > 0 || movementVector.x < 0)
        {
-           if (other.gameObject.CompareTag("Ground"))
-           {
-               touchGrass = true;
-               thorAnima.SetBool("touchGrass", true);
-           }
+           thorAnima.SetBool("Velocity", true);
+       }
+       else
+       {
+           thorAnima.SetBool("Velocity", false);
+       }
+
+       if (movementVector.x < 0)
+       {
+           transform.localScale = new Vector3(-1, 1, 1);
+           isFlipped = true;
+           thorsHammer.GetComponent<Projectile>().direction = true;
+       }
+       else if (movementVector.x > 0)
+       {
+           transform.localScale = new Vector3(1, 1, 1);
+           isFlipped = false;
+           thorsHammer.GetComponent<Projectile>().direction = false;
+       }
+   }
+   void FixedUpdate()
+   { 
+       rb.velocity = new Vector2(movementX * speed, rb.velocity.y); 
+   }
+   void OnCollisionEnter2D(Collision2D other)
+   {
+       if (other.gameObject.CompareTag("Ground"))
+       {
+           touchGrass = true;
+           thorAnima.SetBool("touchGrass", true);
+       }
            
-       }
-       void FixedUpdate()
-       {
-           rb.velocity = new Vector2(movementX * speed, rb.velocity.y);
-       }
+   }
+       
 
-       void Raycast(Vector2 direction)
+   void Raycast(Vector2 direction)
+   {
+       RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, direction, attackRayRange, layerMask);
+       if (hit.collider != null)
        {
-           RaycastHit2D hit = Physics2D.Raycast(attackRay.transform.position, direction, attackRayRange, layerMask);
-           if (hit.collider != null)
-           {
-               string raycastreturn = hit.collider.gameObject.name;
-               foundEnemy = GameObject.Find(raycastreturn);
-               foundEnemy.GetComponent<enemy>().isHit = true;
-           } 
-       }
+           string raycastreturn = hit.collider.gameObject.name;
+           foundEnemy = GameObject.Find(raycastreturn);
+           foundEnemy.GetComponent<enemy>().isHit = true;
+       } 
+   }
 
        void DelayedRaycast()
        {

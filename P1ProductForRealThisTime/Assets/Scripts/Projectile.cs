@@ -35,6 +35,7 @@ public class Projectile : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        
         transform.Rotate(Vector3.back * rotationSpeed, Space.Self);
         
         stopwatch.Start();
