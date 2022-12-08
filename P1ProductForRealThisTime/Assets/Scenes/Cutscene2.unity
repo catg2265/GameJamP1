@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thor: Wonderful! if i liked those bulls surely whales will enjoy them
+  m_text: 'Thor: Wonderful! If I liked those bulls surely whales will enjoy them
     too'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -317,9 +317,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hymir: hmm maybe, ill let you borrow it, but you ate all food. That was
-    my breakfast, lunch and dinner. If you want to borrow my cauldron you will have
-    to go with me to catch food!'
+  m_text: 'Hymir: Hmm maybe, I will let you borrow it, but you ate all the food.
+    That was my breakfast, lunch and dinner. If you want to borrow my cauldron you
+    will have to go with me to catch food!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.2
+  m_fontSize: 40.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -760,8 +760,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hymir: I think i could go for some whales, ill go prep the boat. You go
-    find some bait for the whales!
+  m_text: 'Hymir: I think I could go for some whales, I will go prep the boat. You
+    go find some bait for the whales!
 
     *grumble* *grumble* Stupid Thor *grumble*'
   m_isRightToLeft: 0
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.4
+  m_fontSize: 38.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -899,7 +899,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Om nom nom. I gotta say Hymir these bulls you have are delicious. I am
-    here to borrow you big cauldron, can i have it?
+    here to borrow your big cauldron, can I lend it?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

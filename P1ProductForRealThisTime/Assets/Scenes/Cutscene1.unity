@@ -181,8 +181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thor: Very well, i will go get Hymirs cauldron, after all i know the giants,
-    and i am the brawest and brawniest of all the gods! Now off to Hymir!'
+  m_text: 'Thor: Very well, I will go get Hymirs cauldron, after all I know the giants,
+    and I am the brawest and brawniest of all the gods! Now off to Hymir!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.5
+  m_fontSize: 53.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Thor: \xC6gir and Ran, the gods of all has decided we need to hold a feast,
-    but we cannot hold it ourself. Will you hosts this feast?"
+    but we cannot hold it ourself. Will you host this feast?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC6gir: Okay Ran and i will hold this feast, but every good feast needs
+  m_text: "\xC6gir: Okay Ran and I will hold this feast, but every good feast needs
     ale, and if im right the gods need more ale than we can brew in our cauldron.
     We need one that is bigger!!"
   m_isRightToLeft: 0
