@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 215919045}
   - component: {fileID: 215919044}
   m_Layer: 0
-  m_Name: backbackground_p1
+  m_Name: background sky_p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8378,7 +8378,7 @@ GameObject:
   - component: {fileID: 1050940566}
   - component: {fileID: 1050940565}
   m_Layer: 0
-  m_Name: background sky
+  m_Name: background sky_p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12576,7 +12576,7 @@ GameObject:
   - component: {fileID: 1647539822}
   - component: {fileID: 1647539821}
   m_Layer: 0
-  m_Name: background ground p1
+  m_Name: background ground_p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
