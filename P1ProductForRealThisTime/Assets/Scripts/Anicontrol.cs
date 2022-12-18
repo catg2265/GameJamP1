@@ -27,12 +27,5 @@ public class Anicontrol : MonoBehaviour
         transform.position = Vector3.zero;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("StartScene");
-        }
-    }
+    
 }
